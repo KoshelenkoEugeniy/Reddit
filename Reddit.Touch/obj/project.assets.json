@@ -1,0 +1,731 @@
+{
+  "version": 3,
+  "targets": {
+    "Xamarin.iOS,Version=v1.0": {
+      "MvvmCross/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross.Binding": "[5.6.3]",
+          "MvvmCross.Core": "[5.6.3]"
+        }
+      },
+      "MvvmCross.Binding/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross.Core": "[5.6.3]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/MvvmCross.Binding.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Localization.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/MvvmCross.Binding.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Localization.dll": {}
+        }
+      },
+      "MvvmCross.Core/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross.Platform": "[5.6.3]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/MvvmCross.Core.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/MvvmCross.Core.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.iOS.dll": {}
+        }
+      },
+      "MvvmCross.Platform/5.6.3": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/MvvmCross.Platform.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/MvvmCross.Platform.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll": {}
+        }
+      },
+      "MvvmCross.StarterPack/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross": "[5.6.3]"
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Essentials/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Reddit.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Reddit.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reddit.Core.dll": {}
+        }
+      }
+    },
+    "Xamarin.iOS,Version=v1.0/win": {
+      "MvvmCross/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross.Binding": "[5.6.3]",
+          "MvvmCross.Core": "[5.6.3]"
+        }
+      },
+      "MvvmCross.Binding/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross.Core": "[5.6.3]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/MvvmCross.Binding.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Localization.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/MvvmCross.Binding.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Localization.dll": {}
+        }
+      },
+      "MvvmCross.Core/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross.Platform": "[5.6.3]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/MvvmCross.Core.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/MvvmCross.Core.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.iOS.dll": {}
+        }
+      },
+      "MvvmCross.Platform/5.6.3": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/MvvmCross.Platform.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/MvvmCross.Platform.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll": {}
+        }
+      },
+      "MvvmCross.StarterPack/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross": "[5.6.3]"
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Essentials/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Reddit.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Reddit.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reddit.Core.dll": {}
+        }
+      }
+    },
+    "Xamarin.iOS,Version=v1.0/win-x64": {
+      "MvvmCross/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross.Binding": "[5.6.3]",
+          "MvvmCross.Core": "[5.6.3]"
+        }
+      },
+      "MvvmCross.Binding/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross.Core": "[5.6.3]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/MvvmCross.Binding.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Localization.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/MvvmCross.Binding.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Localization.dll": {}
+        }
+      },
+      "MvvmCross.Core/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross.Platform": "[5.6.3]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/MvvmCross.Core.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/MvvmCross.Core.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.iOS.dll": {}
+        }
+      },
+      "MvvmCross.Platform/5.6.3": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/MvvmCross.Platform.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/MvvmCross.Platform.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll": {}
+        }
+      },
+      "MvvmCross.StarterPack/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross": "[5.6.3]"
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Essentials/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Reddit.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Reddit.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reddit.Core.dll": {}
+        }
+      }
+    },
+    "Xamarin.iOS,Version=v1.0/win-x86": {
+      "MvvmCross/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross.Binding": "[5.6.3]",
+          "MvvmCross.Core": "[5.6.3]"
+        }
+      },
+      "MvvmCross.Binding/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross.Core": "[5.6.3]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/MvvmCross.Binding.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Localization.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/MvvmCross.Binding.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Localization.dll": {}
+        }
+      },
+      "MvvmCross.Core/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross.Platform": "[5.6.3]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/MvvmCross.Core.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/MvvmCross.Core.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.iOS.dll": {}
+        }
+      },
+      "MvvmCross.Platform/5.6.3": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/MvvmCross.Platform.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/MvvmCross.Platform.dll": {},
+          "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll": {}
+        }
+      },
+      "MvvmCross.StarterPack/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross": "[5.6.3]"
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Essentials/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Reddit.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Reddit.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reddit.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MvvmCross/5.6.3": {
+      "sha512": "DkUtv8r7B+mRSaHonauJmkcwct5IrVNoxqvU9cKGx6WnvQP4BcLIgszG8+hScRAZUAPqAYBIg3JqQg9BOqk7PA==",
+      "type": "package",
+      "path": "mvvmcross/5.6.3",
+      "files": [
+        ".signature.p7s",
+        "mvvmcross.5.6.3.nupkg.sha512",
+        "mvvmcross.nuspec"
+      ]
+    },
+    "MvvmCross.Binding/5.6.3": {
+      "sha512": "rzpeB8X0sxe/eWYZDYxG0lbtZxqfgx6FOczIptXLI8Rf/mFiz8dKHgQb7iKVyD/yCt+tiyxe+fpKWXQSwxKFEw==",
+      "type": "package",
+      "path": "mvvmcross.binding/5.6.3",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid/MvvmCross.Binding.Droid.dll",
+        "lib/MonoAndroid/MvvmCross.Binding.Droid.pdb",
+        "lib/MonoAndroid/MvvmCross.Binding.dll",
+        "lib/MonoAndroid/MvvmCross.Binding.pdb",
+        "lib/MonoAndroid/MvvmCross.Binding.pdb.srcsrv",
+        "lib/MonoAndroid/MvvmCross.Localization.dll",
+        "lib/MonoAndroid/MvvmCross.Localization.pdb",
+        "lib/MonoAndroid/MvvmCross.Localization.pdb.srcsrv",
+        "lib/Xamarin.Mac20/MvvmCross.Binding.Mac.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Binding.Mac.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Binding.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Binding.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Binding.pdb.srcsrv",
+        "lib/Xamarin.Mac20/MvvmCross.Localization.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Localization.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Localization.pdb.srcsrv",
+        "lib/Xamarin.iOS10/MvvmCross.Binding.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Binding.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Binding.pdb.srcsrv",
+        "lib/Xamarin.iOS10/MvvmCross.Localization.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Localization.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Localization.pdb.srcsrv",
+        "lib/Xamarin.tvOS/MvvmCross.Binding.dll",
+        "lib/Xamarin.tvOS/MvvmCross.Binding.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Binding.pdb.srcsrv",
+        "lib/Xamarin.tvOS/MvvmCross.Binding.tvOS.dll",
+        "lib/Xamarin.tvOS/MvvmCross.Binding.tvOS.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Localization.dll",
+        "lib/Xamarin.tvOS/MvvmCross.Localization.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Localization.pdb.srcsrv",
+        "lib/dotnet/MvvmCross.Binding.dll",
+        "lib/dotnet/MvvmCross.Binding.pdb",
+        "lib/dotnet/MvvmCross.Binding.pdb.srcsrv",
+        "lib/dotnet/MvvmCross.Localization.dll",
+        "lib/dotnet/MvvmCross.Localization.pdb",
+        "lib/dotnet/MvvmCross.Localization.pdb.srcsrv",
+        "lib/net45/MvvmCross.Binding.Wpf.dll",
+        "lib/net45/MvvmCross.Binding.Wpf.pdb",
+        "lib/net45/MvvmCross.Binding.Wpf.pdb.srcsrv",
+        "lib/net45/MvvmCross.Binding.dll",
+        "lib/net45/MvvmCross.Binding.pdb",
+        "lib/net45/MvvmCross.Binding.pdb.srcsrv",
+        "lib/net45/MvvmCross.Localization.dll",
+        "lib/net45/MvvmCross.Localization.pdb",
+        "lib/net45/MvvmCross.Localization.pdb.srcsrv",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Binding.dll",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Binding.pdb",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Binding.pdb.srcsrv",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Localization.dll",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Localization.pdb",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Localization.pdb.srcsrv",
+        "lib/uap10.0/MvvmCross.Binding.Uwp.dll",
+        "lib/uap10.0/MvvmCross.Binding.Uwp.pdb",
+        "lib/uap10.0/MvvmCross.Binding.Uwp.pri",
+        "lib/uap10.0/MvvmCross.Binding.dll",
+        "lib/uap10.0/MvvmCross.Binding.pdb",
+        "lib/uap10.0/MvvmCross.Binding.pdb.srcsrv",
+        "lib/uap10.0/MvvmCross.Localization.dll",
+        "lib/uap10.0/MvvmCross.Localization.pdb",
+        "lib/uap10.0/MvvmCross.Localization.pdb.srcsrv",
+        "mvvmcross.binding.5.6.3.nupkg.sha512",
+        "mvvmcross.binding.nuspec"
+      ]
+    },
+    "MvvmCross.Core/5.6.3": {
+      "sha512": "F376z1VAPLd/OWx5i4AOHP/ZMS78sW+J1xzk+07jLTeRNuQe7YmH2HXFHiVxJYRACx1p3LLKCT++XxWJWHVDlw==",
+      "type": "package",
+      "path": "mvvmcross.core/5.6.3",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid/MvvmCross.Core.dll",
+        "lib/MonoAndroid/MvvmCross.Core.pdb",
+        "lib/MonoAndroid/MvvmCross.Droid.dll",
+        "lib/MonoAndroid/MvvmCross.Droid.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Core.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Core.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Mac.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Mac.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Core.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Core.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.iOS.dll",
+        "lib/Xamarin.iOS10/MvvmCross.iOS.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Core.dll",
+        "lib/Xamarin.tvOS/MvvmCross.Core.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.tvOS.dll",
+        "lib/Xamarin.tvOS/MvvmCross.tvOS.pdb",
+        "lib/dotnet/MvvmCross.Core.dll",
+        "lib/dotnet/MvvmCross.Core.pdb",
+        "lib/net45/MvvmCross.Core.dll",
+        "lib/net45/MvvmCross.Core.pdb",
+        "lib/net45/MvvmCross.Wpf.dll",
+        "lib/net45/MvvmCross.Wpf.pdb",
+        "lib/net45/MvvmCross.Wpf.pdb.srcsrv",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Core.dll",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Core.pdb",
+        "lib/uap10.0/MvvmCross.Core.dll",
+        "lib/uap10.0/MvvmCross.Core.pdb",
+        "lib/uap10.0/MvvmCross.Uwp.dll",
+        "lib/uap10.0/MvvmCross.Uwp.pdb",
+        "lib/uap10.0/MvvmCross.Uwp.pri",
+        "mvvmcross.core.5.6.3.nupkg.sha512",
+        "mvvmcross.core.nuspec"
+      ]
+    },
+    "MvvmCross.Platform/5.6.3": {
+      "sha512": "8VQ9iY3jZyR10XTpol0T4+MtqRWhvMrKl50dJDeM4AeyKY4p5sp2EQQ0EDGbl20kRsWEtw8yUWev11RllMCtqg==",
+      "type": "package",
+      "path": "mvvmcross.platform/5.6.3",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid/MvvmCross.Platform.Droid.dll",
+        "lib/MonoAndroid/MvvmCross.Platform.Droid.pdb",
+        "lib/MonoAndroid/MvvmCross.Platform.dll",
+        "lib/MonoAndroid/MvvmCross.Platform.pdb",
+        "lib/MonoAndroid/MvvmCross.Platform.pdb.srcsrv",
+        "lib/Xamarin.Mac20/MvvmCross.Platform.Mac.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Platform.Mac.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Platform.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Platform.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Platform.pdb.srcsrv",
+        "lib/Xamarin.iOS10/MvvmCross.Platform.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Platform.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Platform.pdb.srcsrv",
+        "lib/Xamarin.tvOS/MvvmCross.Platform.dll",
+        "lib/Xamarin.tvOS/MvvmCross.Platform.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Platform.pdb.srcsrv",
+        "lib/Xamarin.tvOS/MvvmCross.Platform.tvOS.dll",
+        "lib/Xamarin.tvOS/MvvmCross.Platform.tvOS.pdb",
+        "lib/dotnet/MvvmCross.Platform.dll",
+        "lib/dotnet/MvvmCross.Platform.pdb",
+        "lib/dotnet/MvvmCross.Platform.pdb.srcsrv",
+        "lib/net45/MvvmCross.Platform.Wpf.dll",
+        "lib/net45/MvvmCross.Platform.Wpf.pdb",
+        "lib/net45/MvvmCross.Platform.dll",
+        "lib/net45/MvvmCross.Platform.pdb",
+        "lib/net45/MvvmCross.Platform.pdb.srcsrv",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Platform.dll",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Platform.pdb",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Platform.pdb.srcsrv",
+        "lib/uap10.0/MvvmCross.Platform.Uwp.dll",
+        "lib/uap10.0/MvvmCross.Platform.Uwp.pdb",
+        "lib/uap10.0/MvvmCross.Platform.Uwp.pri",
+        "lib/uap10.0/MvvmCross.Platform.dll",
+        "lib/uap10.0/MvvmCross.Platform.pdb",
+        "lib/uap10.0/MvvmCross.Platform.pdb.srcsrv",
+        "mvvmcross.platform.5.6.3.nupkg.sha512",
+        "mvvmcross.platform.nuspec"
+      ]
+    },
+    "MvvmCross.StarterPack/5.6.3": {
+      "sha512": "Fxy1NKGAabmvRFkZIb+Lgo4wkWakEwXDOqSAwDiNPMg3BaIZyvHgre/lGeMxvjoVK1ir9p2r+jyFwk8JEi2HpQ==",
+      "type": "package",
+      "path": "mvvmcross.starterpack/5.6.3",
+      "files": [
+        ".signature.p7s",
+        "content/MonoAndroid/DebugTrace.cs.pp",
+        "content/MonoAndroid/LinkerPleaseInclude.cs.pp",
+        "content/MonoAndroid/Resources/drawable/splash.png",
+        "content/MonoAndroid/Resources/layout/MainView.axml",
+        "content/MonoAndroid/Resources/layout/SplashScreen.axml",
+        "content/MonoAndroid/Resources/values/SplashStyle.xml",
+        "content/MonoAndroid/Setup.cs.pp",
+        "content/MonoAndroid/SplashScreen.cs.pp",
+        "content/MonoAndroid/ToDo-MvvmCross/_ Droid UI.txt",
+        "content/MonoAndroid/Views/MainView.cs.pp",
+        "content/Xamarin.Mac20/AppDelegate.cs.txt.pp",
+        "content/Xamarin.Mac20/DebugTrace.cs.pp",
+        "content/Xamarin.Mac20/Setup.cs.pp",
+        "content/Xamarin.Mac20/ToDo-MvvmCross/_ Mac UI.txt",
+        "content/Xamarin.Mac20/Views/MainView.cs.pp",
+        "content/Xamarin.Mac20/Views/MainViewController.cs.pp",
+        "content/Xamarin.iOS10/AppDelegate.cs.txt.pp",
+        "content/Xamarin.iOS10/DebugTrace.cs.pp",
+        "content/Xamarin.iOS10/LinkerPleaseInclude.cs.pp",
+        "content/Xamarin.iOS10/Setup.cs.pp",
+        "content/Xamarin.iOS10/ToDo-MvvmCross/_ iOS UI.txt",
+        "content/Xamarin.iOS10/Views/MainView.cs.pp",
+        "content/Xamarin.iOS10/Views/MainView.designer.cs.pp",
+        "content/Xamarin.iOS10/Views/MainView.xib",
+        "content/net45/App.Xaml.Mvx.cs.pp",
+        "content/net45/DebugTrace.cs.pp",
+        "content/net45/Setup.cs.pp",
+        "content/net45/ToDo-MvvmCross/_ Wpf UI.txt",
+        "content/net45/Views/MainView.xaml.cs.pp",
+        "content/net45/Views/MainView.xaml.pp",
+        "content/portable-net45+win+wpa81+wp80/App.cs.pp",
+        "content/portable-net45+win+wpa81+wp80/ViewModels/MainViewModel.cs.pp",
+        "mvvmcross.starterpack.5.6.3.nupkg.sha512",
+        "mvvmcross.starterpack.nuspec"
+      ]
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "nATsBTD2CKr4AYN6eRszhX4sptImWmBJwB/U6XKCWWfnCcrTBw8XSCm3QA9gjppkHTr8OkXUY21MR91D3QZXsw==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Xamarin.Essentials/1.0.1": {
+      "sha512": "TUsMSXqdLEZlx0O3EcWMwOF5e8X3Gh0GX28FlH3q8iyKAQBYd8tV+Ja7tHMplf7D8V4NVCG9ELqx2nk/jPWPew==",
+      "type": "package",
+      "path": "xamarin.essentials/1.0.1",
+      "files": [
+        ".signature.p7s",
+        "lib/monoandroid71/Xamarin.Essentials.dll",
+        "lib/monoandroid71/Xamarin.Essentials.pdb",
+        "lib/monoandroid71/Xamarin.Essentials.xml",
+        "lib/monoandroid80/Xamarin.Essentials.dll",
+        "lib/monoandroid80/Xamarin.Essentials.pdb",
+        "lib/monoandroid80/Xamarin.Essentials.xml",
+        "lib/monoandroid81/Xamarin.Essentials.dll",
+        "lib/monoandroid81/Xamarin.Essentials.pdb",
+        "lib/monoandroid81/Xamarin.Essentials.xml",
+        "lib/netstandard1.0/Xamarin.Essentials.dll",
+        "lib/netstandard1.0/Xamarin.Essentials.pdb",
+        "lib/netstandard1.0/Xamarin.Essentials.xml",
+        "lib/netstandard2.0/Xamarin.Essentials.dll",
+        "lib/netstandard2.0/Xamarin.Essentials.pdb",
+        "lib/netstandard2.0/Xamarin.Essentials.xml",
+        "lib/uap10.0.16299/Xamarin.Essentials.dll",
+        "lib/uap10.0.16299/Xamarin.Essentials.pdb",
+        "lib/uap10.0.16299/Xamarin.Essentials.pri",
+        "lib/uap10.0.16299/Xamarin.Essentials.xml",
+        "lib/xamarinios10/Xamarin.Essentials.dll",
+        "lib/xamarinios10/Xamarin.Essentials.pdb",
+        "lib/xamarinios10/Xamarin.Essentials.xml",
+        "readme.txt",
+        "xamarin.essentials.1.0.1.nupkg.sha512",
+        "xamarin.essentials.nuspec"
+      ]
+    },
+    "Reddit.Core/1.0.0": {
+      "type": "project",
+      "path": "../Reddit.Core/Reddit.Core.csproj",
+      "msbuildProject": "../Reddit.Core/Reddit.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "Xamarin.iOS,Version=v1.0": [
+      "MvvmCross >= 5.6.3",
+      "MvvmCross.Binding >= 5.6.3",
+      "MvvmCross.Core >= 5.6.3",
+      "MvvmCross.Platform >= 5.6.3",
+      "MvvmCross.StarterPack >= 5.6.3",
+      "Reddit.Core >= 1.0.0",
+      "Xamarin.Essentials >= 1.0.1"
+    ]
+  },
+  "packageFolders": {
+    "/Users/eugene/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/Reddit.Touch.csproj",
+      "projectName": "Reddit.Touch",
+      "projectPath": "/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/Reddit.Touch.csproj",
+      "packagesPath": "/Users/eugene/.nuget/packages/",
+      "outputPath": "/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/obj/",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "/Users/eugene/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "xamarinios10"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "projectReferences": {
+            "/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Reddit.Core.csproj": {
+              "projectPath": "/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Reddit.Core.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "xamarinios10": {
+        "dependencies": {
+          "MvvmCross": {
+            "target": "Package",
+            "version": "[5.6.3, )"
+          },
+          "MvvmCross.Binding": {
+            "target": "Package",
+            "version": "[5.6.3, )"
+          },
+          "MvvmCross.Core": {
+            "target": "Package",
+            "version": "[5.6.3, )"
+          },
+          "MvvmCross.Platform": {
+            "target": "Package",
+            "version": "[5.6.3, )"
+          },
+          "MvvmCross.StarterPack": {
+            "target": "Package",
+            "version": "[5.6.3, )"
+          },
+          "Xamarin.Essentials": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
