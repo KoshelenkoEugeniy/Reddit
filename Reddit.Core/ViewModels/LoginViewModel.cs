@@ -5,11 +5,17 @@ namespace Reddit.Core.ViewModels
 {
     public class LoginViewModel : MvxViewModel
     {
+        public MvxObservableCollection<string> TestCollection { get; set; } 
+
+        public LoginViewModel()
+        {
+            TestCollection = new MvxObservableCollection<string>
+            { "q", "w", "e", "r", "t", "y"};
+        }
+
 
         public override Task Initialize()
         {
-            //TODO: Add starting logic here
-		    
             return base.Initialize();
         }
         

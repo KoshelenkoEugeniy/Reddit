@@ -11,7 +11,7 @@ namespace Reddit.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterNavigationServiceAppStart<ViewModels.LoginViewModel>();
+            RegisterNavigationServiceAppStart<ViewModels.FeedViewModel>();
         }
     }
 }

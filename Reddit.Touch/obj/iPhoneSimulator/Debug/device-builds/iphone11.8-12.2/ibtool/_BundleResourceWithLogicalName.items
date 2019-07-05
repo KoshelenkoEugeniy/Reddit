@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/ibtool/FeedTableViewCell.nib">
+      <LogicalName>FeedTableViewCell.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/ibtool/FeedViewController.nib">
+      <LogicalName>FeedViewController.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/ibtool/LoginViewController.nib">
       <LogicalName>LoginViewController.nib</LogicalName>
       <Optimize>false</Optimize>

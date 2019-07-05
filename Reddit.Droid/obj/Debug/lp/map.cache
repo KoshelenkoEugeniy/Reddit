@@ -1,13 +1,12 @@
-Reddit.Core
-System.Runtime
-MvvmCross.Core
-MvvmCross.Platform
-System.Reflection.Extensions
 MvvmCross.Binding
 MvvmCross.Binding.Droid
+MvvmCross.Core
 MvvmCross.Droid
 MvvmCross.Localization
+MvvmCross.Platform
 MvvmCross.Platform.Droid
+Reddit.Core
+System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
 Xamarin.Android.Arch.Lifecycle.Runtime
@@ -25,3 +24,4 @@ Xamarin.Android.Support.v7.AppCompat
 Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
 Xamarin.Essentials
+System.Reflection.Extensions

@@ -134,11 +134,15 @@
     <ItemGroup>
         <Folder Include="Resources\" />
         <Folder Include="Views\" />
+        <Folder Include="Views\Feed\" />
+        <Folder Include="Views\Feed\Data\" />
     </ItemGroup>
     <ItemGroup>
         <InterfaceDefinition Include="LaunchScreen.storyboard" />
         <InterfaceDefinition Include="Main.storyboard" />
         <InterfaceDefinition Include="Views\LoginViewController.xib" />
+        <InterfaceDefinition Include="Views\Feed\FeedViewController.xib" />
+        <InterfaceDefinition Include="Views\Feed\Data\FeedTableViewCell.xib" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Info.plist" />
@@ -152,6 +156,14 @@
           <DependentUpon>LoginViewController.cs</DependentUpon>
         </Compile>
         <Compile Include="Setup.cs" />
+        <Compile Include="Views\Feed\FeedViewController.cs" />
+        <Compile Include="Views\Feed\FeedViewController.designer.cs">
+          <DependentUpon>FeedViewController.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\Feed\Data\FeedTableViewCell.cs" />
+        <Compile Include="Views\Feed\Data\FeedTableViewCell.designer.cs">
+          <DependentUpon>FeedTableViewCell.cs</DependentUpon>
+        </Compile>
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\Reddit.Core\Reddit.Core.csproj">

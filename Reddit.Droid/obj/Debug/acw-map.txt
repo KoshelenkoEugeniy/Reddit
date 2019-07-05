@@ -1,6 +1,9 @@
 Reddit.Droid.Views.LoginActivity, Reddit.Droid;md51289c63f4487f220a83dd718a4b95fc7.LoginActivity
 Reddit.Droid.Views.LoginActivity;md51289c63f4487f220a83dd718a4b95fc7.LoginActivity
 reddit.droid.views.LoginActivity;md51289c63f4487f220a83dd718a4b95fc7.LoginActivity
+Reddit.Droid.Views.Feed.FeedActivity, Reddit.Droid;md5e3218b593855fef69319ab6634b018bb.FeedActivity
+Reddit.Droid.Views.Feed.FeedActivity;md5e3218b593855fef69319ab6634b018bb.FeedActivity
+reddit.droid.views.feed.FeedActivity;md5e3218b593855fef69319ab6634b018bb.FeedActivity
 MvvmCross.Binding.Droid.Views.MvxContextWrapper, MvvmCross.Binding.Droid;md5e2d47b0f76577a28cbe1af6585b33969.MvxContextWrapper
 MvvmCross.Binding.Droid.Views.MvxContextWrapper;md5e2d47b0f76577a28cbe1af6585b33969.MvxContextWrapper
 mvvmcross.binding.droid.views.MvxContextWrapper;md5e2d47b0f76577a28cbe1af6585b33969.MvxContextWrapper

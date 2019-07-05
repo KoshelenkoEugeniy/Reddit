@@ -14,13 +14,13 @@ using MvvmCross.Droid.Views;
 
 namespace Reddit.Droid.Views
 {
-    [Activity(Label = "LoginActivity", MainLauncher = true)]
+    [Activity(Label = "LoginActivity")]
     public class LoginActivity : MvxActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.LoginView);
+            SetContentView(Resource.Layout.activity_login);
         }
     }
 }

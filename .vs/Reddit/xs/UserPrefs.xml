@@ -1,12 +1,34 @@
-﻿<Properties StartupConfiguration="{C04C6DE0-9C9A-4C12-8086-53676682DFB6}|Default">
-  <MonoDevelop.Ide.ItemProperties.Reddit.Droid PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+﻿<Properties StartupConfiguration="{D0B3C1F0-4A36-464A-A3D6-F6F4F0DA554E}|Default">
+  <MonoDevelop.Ide.ItemProperties.Reddit.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.192.168.56.101:5555" />
   <MonoDevelop.Ide.ItemProperties.Reddit.Touch PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D5C5EAE9-8534-4BC9-A727-15D21F539CAB" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Reddit.Touch/Views/Feed/FeedViewController.cs">
+    <Files>
+      <File FileName="Reddit.Touch/Views/Feed/FeedViewController.cs" Line="23" Column="25" />
+      <File FileName="Reddit.Touch/Views/LoginViewController.cs" Line="24" Column="32" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Reddit" expanded="True" selected="True">
-            <Node name="Reddit.Touch" expanded="True" />
+          <Node name="Reddit" expanded="True">
+            <Node name="Reddit.Core" expanded="True">
+              <Node name="ViewModels" expanded="True" />
+            </Node>
+            <Node name="Reddit.Droid" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Feed" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Reddit.Touch" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Feed" expanded="True">
+                  <Node name="Data" expanded="True" />
+                  <Node name="FeedViewController.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
