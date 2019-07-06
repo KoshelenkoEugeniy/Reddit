@@ -1,4 +1,9 @@
+using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
+using Reddit.Core.Managers;
+using Reddit.Core.Managers.Interfaces;
+using Reddit.Core.Services;
+using Reddit.Core.Services.Interfaces;
 
 namespace Reddit.Core
 {
@@ -10,6 +15,14 @@ namespace Reddit.Core
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
+
+            Mvx.RegisterType<IApiService, ApiService>();
+
+            Mvx.RegisterType<IFeedsService, FeedsService>();
+            Mvx.RegisterType<IAccountService, AccountService>();
+
+            Mvx.RegisterType<IAccountManager, AccountManager>();
+            Mvx.RegisterType<IFeedsManager, FeedsManager>();
 
             RegisterNavigationServiceAppStart<ViewModels.FeedViewModel>();
         }

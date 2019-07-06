@@ -172,6 +172,9 @@
 -r=/Users/eugene/.nuget/packages/mvvmcross.platform/5.6.3/lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll
 -r=/Users/eugene/.nuget/packages/xamarin.essentials/1.0.1/lib/xamarinios10/Xamarin.Essentials.dll
 -r=/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Reddit.Core.dll
+-r=/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Polly.dll
+-r=/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Refit.dll
+-r=/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Newtonsoft.Json.dll
 --target-framework=Xamarin.iOS,v1.0
 --root-assembly=/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/bin/iPhoneSimulator/Debug/Reddit.Touch.exe
 

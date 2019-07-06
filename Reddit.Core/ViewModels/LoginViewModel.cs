@@ -1,16 +1,16 @@
 using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
+using Reddit.Core.Managers.Interfaces;
 
 namespace Reddit.Core.ViewModels
 {
     public class LoginViewModel : MvxViewModel
     {
-        public MvxObservableCollection<string> TestCollection { get; set; } 
+        private IAccountManager _accountManager;
 
-        public LoginViewModel()
+        public LoginViewModel(IAccountManager accountManager)
         {
-            TestCollection = new MvxObservableCollection<string>
-            { "q", "w", "e", "r", "t", "y"};
+            _accountManager = accountManager;
         }
 
 

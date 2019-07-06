@@ -28,3 +28,15 @@
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/obj/Debug/Reddit.Core.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/obj/Debug/Reddit.Core.pdb
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/obj/Debug/Reddit.Core.csprojAssemblyReference.cache
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Newtonsoft.Json.dll
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Refit.dll
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Newtonsoft.Json.xml
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Refit.pdb
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Refit.dll.mdb
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Refit.dll.config
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/obj/Debug/Reddit.Core.Resources.AppStrings.resources
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/obj/Debug/Reddit.Core.csproj.GenerateResource.cache
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Polly.dll
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/System.Runtime.InteropServices.RuntimeInformation.dll
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Polly.pdb
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Polly.xml

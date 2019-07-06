@@ -25,3 +25,8 @@ Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
 Xamarin.Essentials
 System.Reflection.Extensions
+System.Diagnostics.Tools
+System.Resources.ResourceManager
+Polly
+Refit
+Newtonsoft.Json

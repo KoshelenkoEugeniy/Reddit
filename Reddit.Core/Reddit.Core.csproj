@@ -32,6 +32,28 @@
     <Compile Include="App.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\FeedViewModel.cs" />
+    <Compile Include="Data\Dtos\DefaultResponse.cs" />
+    <Compile Include="Data\Dtos\AccessResponseDto.cs" />
+    <Compile Include="Data\Dtos\UserResponseDto.cs" />
+    <Compile Include="Data\Dtos\FeedResponseDto.cs" />
+    <Compile Include="Services\Interfaces\IRedditApi.cs" />
+    <Compile Include="Services\ApiService.cs" />
+    <Compile Include="Services\Interfaces\IApiService.cs" />
+    <Compile Include="Services\AuthenticatedHttpClientHandler.cs" />
+    <Compile Include="GlobalConstants.cs" />
+    <Compile Include="Resources\AppStrings.Designer.cs">
+      <DependentUpon>AppStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\BaseService.cs" />
+    <Compile Include="Services\Interfaces\IAccountService.cs" />
+    <Compile Include="Services\Interfaces\IFeedsService.cs" />
+    <Compile Include="Services\AccountService.cs" />
+    <Compile Include="Services\FeedsService.cs" />
+    <Compile Include="Managers\Interfaces\IAccountManager.cs" />
+    <Compile Include="Managers\Interfaces\IFeedsManager.cs" />
+    <Compile Include="Managers\AccountManager.cs" />
+    <Compile Include="Managers\FeedsManager.cs" />
+    <Compile Include="Data\Models\AccessModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -49,9 +71,37 @@
     <Reference Include="MvvmCross.Localization">
       <HintPath>..\packages\MvvmCross.Binding.5.6.3\lib\portable-net45+win+wpa81+wp80\MvvmCross.Localization.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Refit">
+      <HintPath>..\packages\refit.2.4.1\lib\Portable-Net45+NetCore45+WP8+WPA81\Refit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="Polly">
+      <HintPath>..\packages\Polly.5.3.1\lib\netstandard1.1\Polly.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\" />
+    <Folder Include="Data\" />
+    <Folder Include="Data\Dtos\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Mappers\" />
+    <Folder Include="Managers\" />
+    <Folder Include="Managers\Interfaces\" />
+    <Folder Include="Data\Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\refit.2.4.1\build\portable-net45+netcore45+wp8+wpa81+monoandroid+xamarin.ios10\refit.targets" Condition="Exists('..\packages\refit.2.4.1\build\portable-net45+netcore45+wp8+wpa81+monoandroid+xamarin.ios10\refit.targets')" />
 </Project>
