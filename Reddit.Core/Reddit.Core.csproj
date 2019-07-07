@@ -58,6 +58,7 @@
     <Compile Include="Data\Models\UserModel.cs" />
     <Compile Include="Data\Mappers\UserProfileMapper.cs" />
     <Compile Include="Helpers\Interfaces\IDeviceInfo.cs" />
+    <Compile Include="ViewModels\AuthViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

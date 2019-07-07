@@ -137,13 +137,14 @@
         <Folder Include="Views\Feed\" />
         <Folder Include="Views\Feed\Data\" />
         <Folder Include="Helpers\" />
+        <Folder Include="Views\Auth\" />
     </ItemGroup>
     <ItemGroup>
         <InterfaceDefinition Include="LaunchScreen.storyboard" />
         <InterfaceDefinition Include="Main.storyboard" />
-        <InterfaceDefinition Include="Views\LoginViewController.xib" />
         <InterfaceDefinition Include="Views\Feed\FeedViewController.xib" />
         <InterfaceDefinition Include="Views\Feed\Data\FeedTableViewCell.xib" />
+        <InterfaceDefinition Include="Views\Auth\AuthViewController.xib" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Info.plist" />
@@ -152,10 +153,6 @@
     <ItemGroup>
         <Compile Include="Main.cs" />
         <Compile Include="AppDelegate.cs" />
-        <Compile Include="Views\LoginViewController.cs" />
-        <Compile Include="Views\LoginViewController.designer.cs">
-          <DependentUpon>LoginViewController.cs</DependentUpon>
-        </Compile>
         <Compile Include="Setup.cs" />
         <Compile Include="Views\Feed\FeedViewController.cs" />
         <Compile Include="Views\Feed\FeedViewController.designer.cs">
@@ -166,6 +163,11 @@
           <DependentUpon>FeedTableViewCell.cs</DependentUpon>
         </Compile>
         <Compile Include="Helpers\DeviceInfo.cs" />
+        <Compile Include="Views\Auth\AuthViewController.cs" />
+        <Compile Include="Views\Auth\AuthViewController.designer.cs">
+          <DependentUpon>AuthViewController.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\BaseViewController.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\Reddit.Core\Reddit.Core.csproj">

@@ -8,6 +8,9 @@ namespace Reddit.Core.Data.Mappers
     {
         public static UserModel DataToModel(this UserResponseDto data, UserModel model = null)
         {
+            if (data == null)
+                return null;
+
             if (model == null)
                 model = new UserModel();
 

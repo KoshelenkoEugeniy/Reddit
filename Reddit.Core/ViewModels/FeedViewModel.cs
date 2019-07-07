@@ -1,30 +1,43 @@
 ﻿using System;
+using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform;
+using Reddit.Core.Data.Models;
 using Reddit.Core.Managers.Interfaces;
 
 namespace Reddit.Core.ViewModels
 {
     public class FeedViewModel : MvxViewModel
     {
-        public MvxObservableCollection<string> TestCollection { get; set; }
+        //public MvxObservableCollection<string> TestCollection { get; set; }
 
-        private IFeedsManager _feedsManager;
+        protected readonly IMvxNavigationService NavigationService;
 
-        private IAccountManager _accountManager;
+        //private IFeedsManager _feedsManager;
+
+        //private IAccountManager _accountManager;
+
+        private UserModel currentUser = new UserModel();
 
         public FeedViewModel(IFeedsManager feedsManager, IAccountManager accountManager)
         {
-            _feedsManager = feedsManager;
-            _accountManager = accountManager;
+            NavigationService = Mvx.Resolve<IMvxNavigationService>();
 
-            TestCollection = new MvxObservableCollection<string>
-            { "q", "w", "e", "r", "t", "y"};
+            //_feedsManager = feedsManager;
+            //_accountManager = accountManager;
+
+            //TestCollection = new MvxObservableCollection<string>
+            //{ "q", "w", "e", "r", "t", "y"};
         }
 
-        public override void ViewAppearing()
+        public async override void ViewAppearing()
         {
             base.ViewAppearing();
-            _accountManager.Login("EugeneKoshelenko", "qwerty123456");
+            //_accountManager.Login("EugeneKoshelenko", "qwerty123456");
+            
+            var user = await NavigationService.Navigate<AuthViewModel, string, UserModel>(string.Empty);
+
+            var x = 1;
         }
     }
 }

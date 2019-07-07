@@ -17,7 +17,12 @@
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/bin/iPhoneSimulator/Debug/Xamarin.Essentials.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/bin/iPhoneSimulator/Debug/Xamarin.Essentials.pdb
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/bin/iPhoneSimulator/Debug/Reddit.Core.dll
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/bin/iPhoneSimulator/Debug/Polly.dll
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/bin/iPhoneSimulator/Debug/Reddit.Core.pdb
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/bin/iPhoneSimulator/Debug/Polly.pdb
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/bin/iPhoneSimulator/Debug/Polly.xml
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/bin/iPhoneSimulator/Debug/Newtonsoft.Json.xml
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/ibtool/_BundleResourceWithLogicalName.items
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/_PartialAppManifest.items
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/_BundleResourceWithLogicalName.items
@@ -29,8 +34,3 @@
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/obj/iPhoneSimulator/Debug/Reddit.Touch.csproj.CopyComplete
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/obj/iPhoneSimulator/Debug/Reddit.Touch.exe
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/obj/iPhoneSimulator/Debug/Reddit.Touch.pdb
-/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/bin/iPhoneSimulator/Debug/Polly.dll
-/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
-/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/bin/iPhoneSimulator/Debug/Polly.pdb
-/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/bin/iPhoneSimulator/Debug/Polly.xml
-/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/bin/iPhoneSimulator/Debug/Newtonsoft.Json.xml

@@ -14,5 +14,33 @@
     </resheader>
     
     
-    <data name="CreatePop_Details_CommonHint" xml:space="preserve">         <value>Add any additional info about your pop</value>     </data>
+    <data name="Auth_Welcome" xml:space="preserve">         <value> Welcome </value>     </data>
+    <data name="Auth_Title" xml:space="preserve">
+        <value>Welcome</value>
+    </data>
+    <data name="Auth_Subtitle" xml:space="preserve">
+        <value>to test Reddit app</value>
+    </data>
+    <data name="Auth_LoginInfo" xml:space="preserve">
+        <value>Login to continue</value>
+    </data>
+    <data name="Auth_Login" xml:space="preserve">
+        <value>Login</value>
+    </data>
+    <data name="Auth_Password" xml:space="preserve">
+        <value>Password</value>
+    </data>
+    <data name="Auth_LoginHint" xml:space="preserve">
+        <value>EugeneKoshelenko</value>
+    </data>
+    <data name="Auth_PasswordHint" xml:space="preserve">
+        <value>qwerty123456</value>
+    </data>
+    <data name="Auth_LoginError" xml:space="preserve">
+        <value>Wrong user name</value>
+    </data>
+    <data name="Auth_PasswordError" xml:space="preserve">
+        <value>Wrong password</value>
+    </data>
+    
 </root>

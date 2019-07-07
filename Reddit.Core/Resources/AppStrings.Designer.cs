@@ -47,9 +47,63 @@ namespace Reddit.Core.Resources {
             }
         }
         
-        internal static string CreatePop_Details_CommonHint {
+        internal static string Auth_Welcome {
             get {
-                return ResourceManager.GetString("CreatePop_Details_CommonHint", resourceCulture);
+                return ResourceManager.GetString("Auth_Welcome", resourceCulture);
+            }
+        }
+        
+        internal static string Auth_Title {
+            get {
+                return ResourceManager.GetString("Auth_Title", resourceCulture);
+            }
+        }
+        
+        internal static string Auth_Subtitle {
+            get {
+                return ResourceManager.GetString("Auth_Subtitle", resourceCulture);
+            }
+        }
+        
+        internal static string Auth_LoginInfo {
+            get {
+                return ResourceManager.GetString("Auth_LoginInfo", resourceCulture);
+            }
+        }
+        
+        internal static string Auth_Login {
+            get {
+                return ResourceManager.GetString("Auth_Login", resourceCulture);
+            }
+        }
+        
+        internal static string Auth_Password {
+            get {
+                return ResourceManager.GetString("Auth_Password", resourceCulture);
+            }
+        }
+        
+        internal static string Auth_LoginHint {
+            get {
+                return ResourceManager.GetString("Auth_LoginHint", resourceCulture);
+            }
+        }
+        
+        internal static string Auth_PasswordHint {
+            get {
+                return ResourceManager.GetString("Auth_PasswordHint", resourceCulture);
+            }
+        }
+        
+        internal static string Auth_LoginError {
+            get {
+                return ResourceManager.GetString("Auth_LoginError", resourceCulture);
+            }
+        }
+        
+        internal static string Auth_PasswordError {
+            get {
+                return ResourceManager.GetString("Auth_PasswordError", resourceCulture);
             }
         }
     }

@@ -30,6 +30,9 @@ namespace Reddit.Core.Services
 
         public async Task<UserResponseDto> GetCurrentUser(AccessResponseDto token)
         {
+            if (token.access_token == null || token.token_type == null)
+                return null;
+
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(token.token_type, token.access_token);
             var response = await _client.GetAsync($"{BaseAddress}/api/v1/me");             var strResponse = await response?.Content.ReadAsStringAsync(); 
             return response.IsSuccessStatusCode ? JsonConvert.DeserializeObject<UserResponseDto>(strResponse) : null;
@@ -42,7 +45,6 @@ namespace Reddit.Core.Services
             _client.BaseAddress = new Uri(BaseAddress);
             _client.DefaultRequestHeaders.Accept.Clear();
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(("application/json")));
-
             if(DeviceInfo.DeviceType == "iOS")
             {
                 _client.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("iOSReddit", "1.0"));

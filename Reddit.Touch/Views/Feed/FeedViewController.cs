@@ -27,7 +27,7 @@ namespace Reddit.Touch.Views.Feed
             FeedsTableView.Source = source;
 
             BindingSet = this.CreateBindingSet<FeedViewController, FeedViewModel>();
-            BindingSet.Bind(source).To(vm => vm.TestCollection);
+            //BindingSet.Bind(source).To(vm => vm.TestCollection);
             //BindingSet.Bind(Source).For(s => s.SelectionChangedCommand).To(vm => vm.OpenPopCommand);
             BindingSet.Apply();
         }
