@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="25dp"
+		android:backgroundTint="@color/abc_search_url_text_normal"
+		app:MvxBind="Text TitleText"
+		android:textStyle="bold"
+		android:textColor="#ff816e61"
+		android:layout_marginTop="50dp"
+		android:gravity="center"
+		android:id="@+id/titleTextView"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentTop="true"/>
+    <TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/SubtitleTextView"
+		android:gravity="center"
+		android:textColor="#ff816e61"
+		android:textSize="25dp"
+		android:textStyle="bold"
+		android:layout_marginTop="10dp"
+		android:layout_below="@+id/titleTextView"
+        app:MvxBind="Text SubtitleText"/>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/infoTextView"
+		android:gravity="center"
+		android:textSize="20dp"
+		android:textStyle="normal"
+		android:textColor="#ffa6a3a4"
+		android:layout_marginTop="20dp"
+		android:layout_below="@+id/SubtitleTextView" 
+        app:MvxBind="Text InfoText"/>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/LoginTextView"
+		android:textSize="20dp"
+		android:textStyle="normal"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:textColor="#ffa6a3a4"
+		android:layout_above="@+id/loginEditText"
+		android:layout_marginBottom="-100dp"
+        app:MvxBind="Text LoginText"/>
+	<EditText
+		android:inputType="textPersonName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/loginEditText"
+		android:gravity="left"
+		android:layout_marginRight="20dp"
+		android:layout_marginLeft="20dp"
+		android:textColor="#ff816e61"
+		android:textSize="20dp"
+		android:textStyle="normal"
+		android:layout_below="@+id/infoTextView"
+		android:layout_marginTop="100dp"
+        app:MvxBind="Text Login; Hint LoginHintText"
+        />
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/errorLoginTextView"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:textColor="#fff3c597"
+		android:textSize="20dp"
+		android:textStyle="bold"
+		android:layout_below="@+id/loginEditText"
+        app:MvxBind="Text LoginErrorText; Visible IsLoginError"/>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/passwordTextView"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:textColor="#ffa6a3a4"
+		android:textSize="20dp"
+		android:textStyle="normal"
+		android:layout_above="@+id/passwordEditText"
+		android:layout_marginBottom="-100dp" 
+        app:MvxBind="Text PasswordText"/>
+	<EditText
+		android:inputType="textPersonName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/passwordEditText"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:textColor="#ff816e61"
+		android:textSize="20dp"
+		android:layout_below="@+id/loginEditText"
+		android:layout_marginTop="100dp"
+        app:MvxBind="Text Password; Hint PasswordHintText"/>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/errorPasswordTextView"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:textColor="#fff3c597"
+		android:textStyle="bold"
+		android:textSize="20dp"
+		android:layout_below="@+id/passwordEditText"
+        app:MvxBind="Text PasswordErrorText; Visible IsLoginError"/>
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/loginButton"
+		android:textColor="#ffffffff"
+        android:backgroundTint="#ff816e61"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="50dp"
+        app:MvxBind="Text LoginText; Click LoginCommand"/>
+   
+    
+</RelativeLayout>
