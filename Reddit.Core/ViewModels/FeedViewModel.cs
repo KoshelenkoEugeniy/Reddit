@@ -9,6 +9,7 @@ namespace Reddit.Core.ViewModels
         public MvxObservableCollection<string> TestCollection { get; set; }
 
         private IFeedsManager _feedsManager;
+
         private IAccountManager _accountManager;
 
         public FeedViewModel(IFeedsManager feedsManager, IAccountManager accountManager)
@@ -23,6 +24,7 @@ namespace Reddit.Core.ViewModels
         public override void ViewAppearing()
         {
             base.ViewAppearing();
+            _accountManager.Login("EugeneKoshelenko", "qwerty123456");
         }
     }
 }

@@ -23,97 +23,76 @@ namespace Reddit.Core.Services
 
         public PolicyWrap<T> GetPolicy<T>()
         {
-            var timeoutPolicy = Policy
-               .TimeoutAsync(GlobalConstants.Api.TimeoutSpan, TimeoutStrategy.Pessimistic);
+            var timeoutPolicy = Policy.TimeoutAsync(GlobalConstants.Api.TimeoutSpan, TimeoutStrategy.Pessimistic);
 
-            var waitAndRetryPolicy = Policy
-                  .Handle<Exception>()
-                 .WaitAndRetryAsync(
-                      retryCount: GlobalConstants.Api.RetryCount,
-                      sleepDurationProvider: (arg) => GlobalConstants.Api.SleepRetrySpan,
-                      onRetry: (exception, calculatedWaitDuration) =>
-                      {
-                      Logger.Trace(MvxTraceLevel.Error, "Base service", exception.Message);
-                      //if (exception is Exceptions.MommrException)
-                      //throw exception;
-                  });
+            var waitAndRetryPolicy = Policy.Handle<Exception>().WaitAndRetryAsync(
+                    retryCount: GlobalConstants.Api.RetryCount,
+                    sleepDurationProvider: (arg) => GlobalConstants.Api.SleepRetrySpan,
+                    onRetry: (exception, calculatedWaitDuration) =>
+                    {
+                        Logger.Trace(MvxTraceLevel.Error, "Base service", exception.Message);
+                        throw exception;
+                    });
 
-            FallbackPolicy<T> fallbackForTimeout = Policy<T>
-                 .Handle<TimeoutRejectedException>()
-                  .Or<WebException>()
-                  .Or<TimeoutException>()
-                  .FallbackAsync(
-                      fallbackValue: default(T),
-                   onFallbackAsync: async b =>
-                   {
-                    Logger.Trace(MvxTraceLevel.Error, "Base service", b.Exception.Message);
-               }
-                );
+            FallbackPolicy<T> fallbackForTimeout = Policy<T>.Handle<TimeoutRejectedException>()
+                    .Or<WebException>().Or<TimeoutException>().FallbackAsync(
+                        fallbackValue: default(T),
+                        onFallbackAsync: async b =>
+                        {
+                            Logger.Trace(MvxTraceLevel.Error, "Base service", b.Exception.Message);
+                        });
 
-            FallbackPolicy<T> fallbackForAnyException = Policy<T>
-              .Handle<Exception>()
-               .FallbackAsync(
+            FallbackPolicy<T> fallbackForAnyException = Policy<T>.Handle<Exception>().FallbackAsync(
                     fallbackAction: async ct =>
                     {
                         return default(T);
                     },
                     onFallbackAsync: async e =>
                     {
-                    Logger.Trace(MvxTraceLevel.Error, "Base service", e.Exception.Message);
-                    throw e.Exception;
-                }
-              );
+                        Logger.Trace(MvxTraceLevel.Error, "Base service", e.Exception.Message);
+                        throw e.Exception;
+                    });
 
             return fallbackForAnyException
-             .WrapAsync(fallbackForTimeout)
-             .WrapAsync(waitAndRetryPolicy)
-             .WrapAsync(timeoutPolicy);
+                .WrapAsync(fallbackForTimeout)
+                .WrapAsync(waitAndRetryPolicy)
+                .WrapAsync(timeoutPolicy);
         }
 
         public PolicyWrap GetPolicy()
         {
-            var timeoutPolicy = Policy
-               .TimeoutAsync(GlobalConstants.Api.TimeoutSpan, TimeoutStrategy.Pessimistic);
+            var timeoutPolicy = Policy.TimeoutAsync(GlobalConstants.Api.TimeoutSpan, TimeoutStrategy.Pessimistic);
 
             var waitAndRetryPolicy = Policy
-                  .Handle<Exception>()
-                 .WaitAndRetryAsync(
-                      retryCount: GlobalConstants.Api.RetryCount,
-                      sleepDurationProvider: (arg) => GlobalConstants.Api.SleepRetrySpan,
-                      onRetry: (exception, calculatedWaitDuration) =>
-                      {
-                      Logger.Trace(MvxTraceLevel.Error, "Base service", exception.Message);
-                      //if (exception is Exceptions.MommrException)
-                      //throw exception;
-                  });
+                .Handle<Exception>().WaitAndRetryAsync(
+                    retryCount: GlobalConstants.Api.RetryCount,
+                    sleepDurationProvider: (arg) => GlobalConstants.Api.SleepRetrySpan,
+                    onRetry: (exception, calculatedWaitDuration) =>
+                    {
+                        Logger.Trace(MvxTraceLevel.Error, "Base service", exception.Message);
+                        throw exception;
+                    });
 
             FallbackPolicy fallbackForTimeout = Policy
-               .Handle<TimeoutRejectedException>()
-                  .Or<WebException>()
-                  .Or<TimeoutException>()
-                  .FallbackAsync(
-                      fallbackAction: async ct => { },
-                     onFallbackAsync: async b =>
-                     {
-                     Logger.Trace(MvxTraceLevel.Error, "Base service", b.Message);
-                 }
-                );
-
-            FallbackPolicy fallbackForAnyException = Policy
-                .Handle<Exception>()
-               .FallbackAsync(
+                .Handle<TimeoutRejectedException>().Or<WebException>().Or<TimeoutException>().FallbackAsync(
                     fallbackAction: async ct => { },
-                   onFallbackAsync: async e =>
-                   {
+                    onFallbackAsync: async b =>
+                    {
+                        Logger.Trace(MvxTraceLevel.Error, "Base service", b.Message);
+                    });
+
+            FallbackPolicy fallbackForAnyException = Policy.Handle<Exception>().FallbackAsync(
+                fallbackAction: async ct => { },
+                onFallbackAsync: async e =>
+                {
                    Logger.Trace(MvxTraceLevel.Error, "Base service", e.Message);
                    throw e;
-               }
-              );
+                });
 
             return fallbackForAnyException
-             .WrapAsync(fallbackForTimeout)
-             .WrapAsync(waitAndRetryPolicy)
-             .WrapAsync(timeoutPolicy);
+                .WrapAsync(fallbackForTimeout)
+                .WrapAsync(waitAndRetryPolicy)
+                .WrapAsync(timeoutPolicy);
         }
     }
 }

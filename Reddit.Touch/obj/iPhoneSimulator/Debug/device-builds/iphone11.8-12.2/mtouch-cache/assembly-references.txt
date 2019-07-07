@@ -33,9 +33,8 @@
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Reddit.Core.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.2/lib/mono/Xamarin.iOS/Facades/System.Diagnostics.Tools.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.2/lib/mono/Xamarin.iOS/Facades/System.Resources.ResourceManager.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.2/lib/mono/Xamarin.iOS/System.Net.Http.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Polly.dll
-/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Refit.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.2/lib/mono/Xamarin.iOS/System.Net.Http.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Newtonsoft.Json.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.2/lib/mono/Xamarin.iOS/Facades/System.Text.Encoding.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.2/lib/mono/Xamarin.iOS/Facades/System.Xml.ReaderWriter.dll
@@ -45,5 +44,4 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.2/lib/mono/Xamarin.iOS/System.Runtime.Serialization.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.2/lib/mono/Xamarin.iOS/System.ServiceModel.Internals.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.2/lib/mono/Xamarin.iOS/Facades/System.Text.Encoding.Extensions.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.2/lib/mono/Xamarin.iOS/Facades/System.Net.Primitives.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.2/lib/mono/Xamarin.iOS/Facades/System.Net.Requests.dll

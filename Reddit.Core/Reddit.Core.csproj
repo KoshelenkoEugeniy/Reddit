@@ -54,6 +54,9 @@
     <Compile Include="Managers\AccountManager.cs" />
     <Compile Include="Managers\FeedsManager.cs" />
     <Compile Include="Data\Models\AccessModel.cs" />
+    <Compile Include="Services\RedditApi.cs" />
+    <Compile Include="Data\Models\UserModel.cs" />
+    <Compile Include="Data\Mappers\UserProfileMapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -83,6 +86,9 @@
     <Reference Include="Polly">
       <HintPath>..\packages\Polly.5.3.1\lib\netstandard1.1\Polly.dll</HintPath>
     </Reference>
+    <Reference Include="ModernHttpClient">
+      <HintPath>..\packages\modernhttpclient.2.4.2\lib\Portable-Net45+WinRT45+WP8+WPA81\ModernHttpClient.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\" />
@@ -91,10 +97,10 @@
     <Folder Include="Services\" />
     <Folder Include="Services\Interfaces\" />
     <Folder Include="Resources\" />
-    <Folder Include="Mappers\" />
     <Folder Include="Managers\" />
     <Folder Include="Managers\Interfaces\" />
     <Folder Include="Data\Models\" />
+    <Folder Include="Data\Mappers\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppStrings.resx">

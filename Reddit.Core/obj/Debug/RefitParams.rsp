@@ -23,4 +23,7 @@ Managers/Interfaces/IFeedsManager.cs
 Managers/AccountManager.cs
 Managers/FeedsManager.cs
 Data/Models/AccessModel.cs
+Services/RedditApi.cs
+Data/Models/UserModel.cs
+Data/Mappers/UserProfileMapper.cs
 /var/folders/pf/zxc6rm292410_vhkgw0mx2cm0000gn/T/.NETPortable,Version=v4.6,Profile=Profile44.AssemblyAttributes.cs

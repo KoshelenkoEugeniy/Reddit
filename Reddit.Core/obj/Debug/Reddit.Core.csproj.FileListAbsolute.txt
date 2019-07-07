@@ -40,3 +40,5 @@
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/System.Runtime.InteropServices.RuntimeInformation.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Polly.pdb
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Polly.xml
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/ModernHttpClient.dll
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/ModernHttpClient.dll.mdb

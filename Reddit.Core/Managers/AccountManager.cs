@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading.Tasks;
+using Reddit.Core.Data.Mappers;
 using Reddit.Core.Data.Models;
 using Reddit.Core.Managers.Interfaces;
 using Reddit.Core.Services.Interfaces;
@@ -14,9 +16,19 @@ namespace Reddit.Core.Managers
             _accountService = accountService;
         }
 
-        public AccessModel GetAccessToken(string userName, string password)
+        public async Task<UserModel> Login(string userName, string password)
         {
-            return null;
+            var token = await _accountService.GetAccessToken(userName, password);
+
+            if(token != null)
+            {
+                var userInfo = await _accountService.GetUser(token);
+                return userInfo.DataToModel();
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

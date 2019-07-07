@@ -17,6 +17,7 @@ namespace Reddit.Core
                 .RegisterAsLazySingleton();
 
             Mvx.RegisterType<IApiService, ApiService>();
+            Mvx.RegisterSingleton<IRedditApi>(() => new RedditApi());
 
             Mvx.RegisterType<IFeedsService, FeedsService>();
             Mvx.RegisterType<IAccountService, AccountService>();

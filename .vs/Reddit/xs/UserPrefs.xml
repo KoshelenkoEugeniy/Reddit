@@ -1,38 +1,34 @@
-﻿<Properties StartupConfiguration="{D0B3C1F0-4A36-464A-A3D6-F6F4F0DA554E}|Default">
+﻿<Properties StartupConfiguration="{C04C6DE0-9C9A-4C12-8086-53676682DFB6}|Default">
   <MonoDevelop.Ide.ItemProperties.Reddit.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
   <MonoDevelop.Ide.ItemProperties.Reddit.Touch PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D5C5EAE9-8534-4BC9-A727-15D21F539CAB" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Reddit.Core/GlobalConstants.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Reddit.Core/Managers/AccountManager.cs">
     <Files>
-      <File FileName="Reddit.Touch/Views/Feed/FeedViewController.cs" Line="23" Column="25" />
-      <File FileName="Reddit.Touch/Views/LoginViewController.cs" Line="24" Column="32" />
-      <File FileName="Reddit.Core/Services/Interfaces/IRedditApi.cs" Line="16" Column="14" />
-      <File FileName="Reddit.Core/Services/ApiService.cs" Line="34" Column="60" />
-      <File FileName="Reddit.Core/GlobalConstants.cs" Line="17" Column="73" />
+      <File FileName="Reddit.Core/Services/Interfaces/IRedditApi.cs" Line="11" Column="1" />
+      <File FileName="Reddit.Core/GlobalConstants.cs" Line="16" Column="45" />
       <File FileName="Reddit.Core/Resources/AppStrings.resx" Line="17" Column="45" />
-      <File FileName="Reddit.Core/App.cs" Line="26" Column="1" />
-      <File FileName="Reddit.Core/Services/BaseService.cs" Line="23" Column="30" />
-      <File FileName="Reddit.Core/Services/Interfaces/IApiService.cs" Line="6" Column="19" />
-      <File FileName="Reddit.Core/Services/Interfaces/IAccountService.cs" Line="8" Column="76" />
-      <File FileName="Reddit.Core/Services/Interfaces/IFeedsService.cs" Line="1" Column="1" />
-      <File FileName="Reddit.Core/Services/AccountService.cs" Line="15" Column="30" />
-      <File FileName="Reddit.Core/Managers/Interfaces/IAccountManager.cs" Line="9" Column="44" />
-      <File FileName="Reddit.Core/Managers/Interfaces/IFeedsManager.cs" Line="5" Column="6" />
-      <File FileName="Reddit.Core/Managers/FeedsManager.cs" Line="6" Column="40" />
-      <File FileName="Reddit.Core/ViewModels/FeedViewModel.cs" Line="17" Column="46" />
-      <File FileName="Reddit.Core/Managers/AccountManager.cs" Line="17" Column="75" />
-      <File FileName="Reddit.Core/Services/FeedsService.cs" Line="6" Column="45" />
+      <File FileName="Reddit.Core/App.cs" Line="20" Column="1" />
+      <File FileName="Reddit.Core/Services/BaseService.cs" Line="83" Column="1" />
+      <File FileName="Reddit.Core/Services/AccountService.cs" Line="40" Column="1" />
+      <File FileName="Reddit.Core/ViewModels/FeedViewModel.cs" Line="27" Column="34" />
+      <File FileName="Reddit.Core/Managers/AccountManager.cs" Line="25" Column="69" />
+      <File FileName="Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" Line="76" Column="1" />
+      <File FileName="Reddit.Core/Services/Interfaces/IAccountService.cs" Line="12" Column="33" />
+      <File FileName="Reddit.Core/Services/RedditApi.cs" Line="29" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Reddit" expanded="True">
             <Node name="Reddit.Core" expanded="True">
+              <Node name="References" expanded="True" />
               <Node name="Data" expanded="True">
                 <Node name="Dtos" expanded="True" />
+                <Node name="Mappers" expanded="True" />
                 <Node name="Models" expanded="True" />
               </Node>
               <Node name="Managers" expanded="True">
                 <Node name="Interfaces" expanded="True" />
+                <Node name="AccountManager.cs" selected="True" />
               </Node>
               <Node name="Resources" expanded="True">
                 <Node name="AppStrings.resx" expanded="True" />
@@ -41,7 +37,11 @@
                 <Node name="Interfaces" expanded="True" />
               </Node>
               <Node name="ViewModels" expanded="True" />
-              <Node name="GlobalConstants.cs" selected="True" />
+            </Node>
+            <Node name="Reddit.Touch" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Feed" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -51,7 +51,14 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Services/AccountService.cs" relfile="Reddit.Core/Services/AccountService.cs" line="56" column="1" />
+      <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" relfile="Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" line="33" column="1" />
+      <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" relfile="Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" line="45" column="1" />
+      <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" relfile="Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" line="44" column="1" />
+      <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Services/AccountService.cs" relfile="Reddit.Core/Services/AccountService.cs" line="37" column="1" />
+      <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Services/AccountService.cs" relfile="Reddit.Core/Services/AccountService.cs" line="40" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
