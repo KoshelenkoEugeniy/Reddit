@@ -22,7 +22,7 @@ namespace Reddit.Core
             Mvx.RegisterType<IFeedsService, FeedsService>();
             Mvx.RegisterType<IAccountService, AccountService>();
 
-            Mvx.RegisterType<IAccountManager, AccountManager>();
+            Mvx.RegisterSingleton<IAccountManager>(() => new AccountManager(Mvx.Resolve<IAccountService>()));
             Mvx.RegisterType<IFeedsManager, FeedsManager>();
 
             RegisterNavigationServiceAppStart<ViewModels.FeedViewModel>();

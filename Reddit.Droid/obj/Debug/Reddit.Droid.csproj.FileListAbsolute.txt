@@ -257,7 +257,6 @@
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/res/mipmap-xxxhdpi/ic_launcher.png
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/res/mipmap-xxxhdpi/ic_launcher_foreground.png
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/res/mipmap-xxxhdpi/ic_launcher_round.png
-/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/res/layout/activity_login.xml
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/res/layout/activity_feed.xml
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/res/layout/activity_auth.xml
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/R.cs.flag

@@ -9,7 +9,7 @@ using Reddit.Core.Resources;
 
 namespace Reddit.Core.ViewModels
 {
-    public class AuthViewModel : MvxViewModel, IMvxViewModel<string, UserModel>
+    public class AuthViewModel : MvxViewModel
     {
         public IMvxAsyncCommand LoginCommand { get; }
 
@@ -65,16 +65,6 @@ namespace Reddit.Core.ViewModels
             LoginCommand = new MvxAsyncCommand(DoLogin);
         }
 
-        public void Prepare(string parameter)
-        {
-        }
-
-        //public override ()
-        //{
-        //    if (CloseCompletionSource != null && !CloseCompletionSource.Task.IsCompleted && !CloseCompletionSource.Task.IsFaulted)
-        //        CloseCompletionSource?.TrySetCanceled();
-        //    base.ViewDestroy();         //} 
-
         private async Task DoLogin()
         {
             if(!string.IsNullOrEmpty(Login) && !string.IsNullOrEmpty(Password))
@@ -86,7 +76,7 @@ namespace Reddit.Core.ViewModels
                 }
                 else
                 {
-                    await NavigationService.Close(this, user);
+                    await NavigationService.Close(this);
                 }
             }
             else

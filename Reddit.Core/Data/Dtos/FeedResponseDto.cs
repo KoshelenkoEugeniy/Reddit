@@ -5,19 +5,20 @@ namespace Reddit.Core.Data.Dtos
 {
     public class FeedResponseDto
     {
-        [JsonProperty("title")]
-        public string Title { get; set; }
+        public string title { get; set; }
 
-        [JsonProperty("subreddit_name_prefixed")]
-        public string AuthorGroup { get; set; }
+        public string subreddit_name_prefixed { get; set; }
 
-        [JsonProperty("thumbnail")]
-        public string ContentUrl { get; set; }
+        public string author { get; set; }
 
-        [JsonProperty("total_awards_received")]
-        public int TotalAwards { get; set; }
+        public string thumbnail { get; set; }
 
-        [JsonProperty("created")]
-        public double CreatedAt { get; set; }
+        public string post_hint { get; set; }
+
+        public double created { get; set; }
+
+        public string url { get; set; }
+
+        public int total_awards_received { get; set; }
     }
 }

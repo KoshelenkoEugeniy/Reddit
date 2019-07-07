@@ -8,5 +8,6 @@ namespace Reddit.Core.Services.Interfaces
     public interface IRedditApi
     {         Task<UserResponseDto> GetCurrentUser(AccessResponseDto token);
 
+        Task<HomeResponseDto> GetUserHomeFeeds();
     }
 }

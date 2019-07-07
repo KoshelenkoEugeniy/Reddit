@@ -9,11 +9,14 @@ namespace Reddit.Core.Managers
 {
     public class AccountManager: IAccountManager
     {
+        public UserModel CurrentUser { get; set; }
+
         private IAccountService _accountService;
 
         public AccountManager(IAccountService accountService)
         {
             _accountService = accountService;
+            CurrentUser = new UserModel();
         }
 
         public async Task<UserModel> Login(string userName, string password)
@@ -23,7 +26,8 @@ namespace Reddit.Core.Managers
             if(token != null)
             {
                 var userInfo = await _accountService.GetUser(token);
-                return userInfo.DataToModel();
+                CurrentUser = userInfo.DataToModel();
+                return CurrentUser;
             }
             else
             {

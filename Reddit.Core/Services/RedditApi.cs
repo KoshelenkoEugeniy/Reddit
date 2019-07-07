@@ -38,6 +38,11 @@ namespace Reddit.Core.Services
             return response.IsSuccessStatusCode ? JsonConvert.DeserializeObject<UserResponseDto>(strResponse) : null;
         }
 
+        public async Task<HomeResponseDto> GetUserHomeFeeds()
+        {             var response = await _client.GetAsync($"{BaseAddress}/.json");             var strResponse = await response?.Content.ReadAsStringAsync(); 
+            return response.IsSuccessStatusCode ? JsonConvert.DeserializeObject<HomeResponseDto>(strResponse) : null;
+        }
+
         private void CreateClient()
         {
             //var token = AccountManager.GetTokenInfo();

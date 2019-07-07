@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
@@ -9,13 +10,13 @@ namespace Reddit.Core.ViewModels
 {
     public class FeedViewModel : MvxViewModel
     {
-        //public MvxObservableCollection<string> TestCollection { get; set; }
+        public MvxObservableCollection<FeedModel> HomeFeeds { get; set; }
 
         protected readonly IMvxNavigationService NavigationService;
 
-        //private IFeedsManager _feedsManager;
+        private IFeedsManager _feedsManager;
 
-        //private IAccountManager _accountManager;
+        private IAccountManager _accountManager;
 
         private UserModel currentUser = new UserModel();
 
@@ -23,21 +24,22 @@ namespace Reddit.Core.ViewModels
         {
             NavigationService = Mvx.Resolve<IMvxNavigationService>();
 
-            //_feedsManager = feedsManager;
-            //_accountManager = accountManager;
+            _feedsManager = feedsManager;
+            _accountManager = accountManager;
 
-            //TestCollection = new MvxObservableCollection<string>
-            //{ "q", "w", "e", "r", "t", "y"};
+            HomeFeeds = new MvxObservableCollection<FeedModel>();
         }
 
         public async override void ViewAppearing()
         {
-            base.ViewAppearing();
-            //_accountManager.Login("EugeneKoshelenko", "qwerty123456");
-            
-            var user = await NavigationService.Navigate<AuthViewModel, string, UserModel>(string.Empty);
-
-            var x = 1;
+            if (string.IsNullOrEmpty(_accountManager.CurrentUser.UserName))
+            {
+                await NavigationService.Navigate<AuthViewModel>();
+            }
+            else
+            {
+                HomeFeeds.AddRange(await _feedsManager.GetHomeFeeds());
+            }
         }
     }
 }
