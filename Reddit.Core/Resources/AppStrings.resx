@@ -42,5 +42,17 @@
     <data name="Auth_PasswordError" xml:space="preserve">
         <value>Wrong password</value>
     </data>
+    <data name="Feed_PostedByText" xml:space="preserve">
+        <value>Posted by {0}</value>
+    </data>
+    <data name="Feed_AwardsText" xml:space="preserve">
+        <value>{0} awards</value>
+    </data>
+    <data name="Feed_CreatedAgo" xml:space="preserve">
+        <value>{0} min ago</value>
+    </data>
+    <data name="Feed_HomeTitle" xml:space="preserve">
+        <value>Home</value>
+    </data>
     
 </root>

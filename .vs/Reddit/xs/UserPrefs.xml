@@ -1,15 +1,11 @@
 ﻿<Properties StartupConfiguration="{C04C6DE0-9C9A-4C12-8086-53676682DFB6}|Default">
   <MonoDevelop.Ide.ItemProperties.Reddit.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_2_xl" PreferredExecutionTarget="Android.192.168.56.101:5555" />
   <MonoDevelop.Ide.ItemProperties.Reddit.Touch PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D5C5EAE9-8534-4BC9-A727-15D21F539CAB" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Reddit.Core/ViewModels/FeedViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Reddit.Touch/Views/Feed/Data/FeedTableViewCell.cs">
     <Files>
-      <File FileName="Reddit.Core/Services/Interfaces/IRedditApi.cs" Line="12" Column="50" />
-      <File FileName="Reddit.Core/GlobalConstants.cs" Line="16" Column="45" />
-      <File FileName="Reddit.Core/Services/AccountService.cs" Line="42" Column="27" />
-      <File FileName="Reddit.Core/ViewModels/FeedViewModel.cs" Line="30" Column="16" />
-      <File FileName="Reddit.Core/Services/RedditApi.cs" Line="48" Column="1" />
-      <File FileName="Reddit.Core/App.cs" Line="25" Column="107" />
-      <File FileName="Reddit.Core/ViewModels/AuthViewModel.cs" Line="66" Column="1" />
+      <File FileName="Reddit.Touch/Views/Feed/Data/FeedTableViewCell.cs" Line="52" Column="46" />
+      <File FileName="Reddit.Core/ViewModels/AuthViewModel.cs" Line="8" Column="1" />
+      <File FileName="Reddit.Touch/Views/Feed/FeedViewController.cs" Line="47" Column="60" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -33,25 +29,17 @@
               <Node name="Services" expanded="True">
                 <Node name="Interfaces" expanded="True" />
               </Node>
-              <Node name="ViewModels" expanded="True">
-                <Node name="FeedViewModel.cs" selected="True" />
-              </Node>
-            </Node>
-            <Node name="Reddit.Droid" expanded="True">
-              <Node name="Helpers" expanded="True" />
-              <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True" />
-              </Node>
-              <Node name="Views" expanded="True">
-                <Node name="Auth" expanded="True" />
-                <Node name="Feed" expanded="True" />
-              </Node>
+              <Node name="ViewModels" expanded="True" />
             </Node>
             <Node name="Reddit.Touch" expanded="True">
               <Node name="Helpers" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Auth" expanded="True" />
-                <Node name="Feed" expanded="True" />
+                <Node name="Feed" expanded="True">
+                  <Node name="Data" expanded="True">
+                    <Node name="FeedTableViewCell.cs" selected="True" />
+                  </Node>
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -67,7 +55,7 @@
       <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" relfile="Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" line="33" column="1" />
       <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" relfile="Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" line="45" column="1" />
       <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" relfile="Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" line="44" column="1" />
-      <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/ViewModels/FeedViewModel.cs" relfile="Reddit.Core/ViewModels/FeedViewModel.cs" line="43" column="26" />
+      <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Touch/Views/Feed/FeedViewController.cs" relfile="Reddit.Touch/Views/Feed/FeedViewController.cs" line="36" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

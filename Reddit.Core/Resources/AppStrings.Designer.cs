@@ -106,5 +106,29 @@ namespace Reddit.Core.Resources {
                 return ResourceManager.GetString("Auth_PasswordError", resourceCulture);
             }
         }
+        
+        internal static string Feed_PostedByText {
+            get {
+                return ResourceManager.GetString("Feed_PostedByText", resourceCulture);
+            }
+        }
+        
+        internal static string Feed_AwardsText {
+            get {
+                return ResourceManager.GetString("Feed_AwardsText", resourceCulture);
+            }
+        }
+        
+        internal static string Feed_CreatedAgo {
+            get {
+                return ResourceManager.GetString("Feed_CreatedAgo", resourceCulture);
+            }
+        }
+        
+        internal static string Feed_HomeTitle {
+            get {
+                return ResourceManager.GetString("Feed_HomeTitle", resourceCulture);
+            }
+        }
     }
 }

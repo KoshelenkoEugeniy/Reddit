@@ -21,22 +21,18 @@ namespace Reddit.Core.Managers
         {
             var homeFeeds = await _feedsService.GetHomeFeeds();
 
-            if(homeFeeds != null && homeFeeds.data.children.Length > 0)
-            {
-                List<FeedModel> feeds = new List<FeedModel>();
+            List<FeedModel> feeds = new List<FeedModel>();
 
+            if (homeFeeds != null && homeFeeds.data.children.Length > 0)
+            {
                 foreach(var feed in homeFeeds.data.children)
                 {
                     var feedDto = feed.data;
                     feeds.Add(feedDto.DataToModel());
                 }
+            }
 
-                return feeds;
-            }
-            else
-            {
-                return null;
-            }
+            return feeds;
         }
     }
 }

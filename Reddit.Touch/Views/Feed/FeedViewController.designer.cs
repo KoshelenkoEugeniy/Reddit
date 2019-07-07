@@ -14,12 +14,36 @@ namespace Reddit.Touch.Views.Feed
 	{
 		[Outlet]
 		UIKit.UITableView FeedsTableView { get; set; }
+
+		[Outlet]
+		UIKit.UIActivityIndicatorView LogoActivityIndicator { get; set; }
+
+		[Outlet]
+		UIKit.UIImageView LogoImageViw { get; set; }
+
+		[Outlet]
+		UIKit.UILabel UserNameLabel { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
 			if (FeedsTableView != null) {
 				FeedsTableView.Dispose ();
 				FeedsTableView = null;
+			}
+
+			if (LogoImageViw != null) {
+				LogoImageViw.Dispose ();
+				LogoImageViw = null;
+			}
+
+			if (UserNameLabel != null) {
+				UserNameLabel.Dispose ();
+				UserNameLabel = null;
+			}
+
+			if (LogoActivityIndicator != null) {
+				LogoActivityIndicator.Dispose ();
+				LogoActivityIndicator = null;
 			}
 		}
 	}

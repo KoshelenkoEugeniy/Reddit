@@ -13,10 +13,10 @@ namespace Reddit.Core.Data.Models
 
         public string PostType { get; set; }
 
-        public DateTime Created { get; set; }
+        public string Created { get; set; }
 
         public string Url { get; set; }
 
-        public int TotalAwards { get; set; }
+        public string TotalAwards { get; set; }
     }
 }
