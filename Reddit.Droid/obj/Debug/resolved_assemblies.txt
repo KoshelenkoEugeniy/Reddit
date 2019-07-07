@@ -57,7 +57,6 @@
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Diagnostics.Tools.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Resources.ResourceManager.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/Polly.dll
-/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/Refit.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/Newtonsoft.Json.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Text.Encoding.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Xml.ReaderWriter.dll
@@ -65,6 +64,5 @@
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Xml.Linq.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Runtime.Serialization.Primitives.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Text.Encoding.Extensions.dll
-/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Net.Primitives.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Net.Requests.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/Mono.Security.dll

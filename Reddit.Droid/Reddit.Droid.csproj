@@ -63,6 +63,7 @@
     <Compile Include="Setup.cs" />
     <Compile Include="Views\LoginActivity.cs" />
     <Compile Include="Views\Feed\FeedActivity.cs" />
+    <Compile Include="Helpers\DeviceInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -127,6 +128,7 @@
     <Folder Include="Views\" />
     <Folder Include="Resources\layout\" />
     <Folder Include="Views\Feed\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

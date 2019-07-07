@@ -136,6 +136,7 @@
         <Folder Include="Views\" />
         <Folder Include="Views\Feed\" />
         <Folder Include="Views\Feed\Data\" />
+        <Folder Include="Helpers\" />
     </ItemGroup>
     <ItemGroup>
         <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -164,6 +165,7 @@
         <Compile Include="Views\Feed\Data\FeedTableViewCell.designer.cs">
           <DependentUpon>FeedTableViewCell.cs</DependentUpon>
         </Compile>
+        <Compile Include="Helpers\DeviceInfo.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\Reddit.Core\Reddit.Core.csproj">

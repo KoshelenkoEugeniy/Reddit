@@ -2,6 +2,9 @@
 using MvvmCross.Core.ViewModels;
 using MvvmCross.iOS.Platform;
 using MvvmCross.iOS.Views.Presenters;
+using MvvmCross.Platform;
+using Reddit.Core.Helpers.Interfaces;
+using Reddit.Touch.Helpers;
 
 namespace Reddit.Touch
 {
@@ -15,6 +18,12 @@ namespace Reddit.Touch
         protected override IMvxApplication CreateApp()
         {
             return new Core.App();
+        }
+
+        protected override void InitializeIoC()
+        {
+            base.InitializeIoC();
+            Mvx.RegisterType<IDeviceInfo, DeviceInfo>();
         }
     }
 }

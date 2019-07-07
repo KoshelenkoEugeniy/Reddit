@@ -34,8 +34,10 @@ namespace Reddit.Core.Services
 
         public async Task<UserResponseDto> GetUser(AccessResponseDto token)
         {
-            var result = await GetPolicy<UserResponseDto>()
-            .ExecuteAsync(async () => await ApiService.Client.GetCurrentUser(token));
+            //var result = await GetPolicy<UserResponseDto>()
+            //.ExecuteAsync(async () => await ApiService.Client.GetCurrentUser(token));
+
+            var result = await ApiService.Client.GetCurrentUser(token);
 
             return result;
         }

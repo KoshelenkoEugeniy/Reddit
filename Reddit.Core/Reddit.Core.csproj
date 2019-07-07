@@ -57,6 +57,7 @@
     <Compile Include="Services\RedditApi.cs" />
     <Compile Include="Data\Models\UserModel.cs" />
     <Compile Include="Data\Mappers\UserProfileMapper.cs" />
+    <Compile Include="Helpers\Interfaces\IDeviceInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -101,6 +102,8 @@
     <Folder Include="Managers\Interfaces\" />
     <Folder Include="Data\Models\" />
     <Folder Include="Data\Mappers\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Helpers\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppStrings.resx">
