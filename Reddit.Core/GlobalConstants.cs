@@ -1,5 +1,4 @@
-﻿using System;
-namespace Reddit.Core
+﻿namespace Reddit.Core
 {
     public static class GlobalConstants
     {
@@ -8,12 +7,6 @@ namespace Reddit.Core
             public const string OauthBaseAddress = "https://oauth.reddit.com";
 
             public const string AuthAddress = "https://www.reddit.com";
-
-            public static TimeSpan TimeoutSpan => TimeSpan.FromSeconds(10);
-
-            public static TimeSpan SleepRetrySpan => TimeSpan.FromSeconds(2);
-
-            public const int RetryCount = 2;
         }
 
         public static class RedditApp

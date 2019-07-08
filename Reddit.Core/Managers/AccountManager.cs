@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Reddit.Core.Data.Mappers;
 using Reddit.Core.Data.Models;
 using Reddit.Core.Managers.Interfaces;

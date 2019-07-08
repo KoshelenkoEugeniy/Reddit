@@ -1,10 +1,5 @@
-﻿using System;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using MvvmCross.Platform;
-using Reddit.Core.Managers;
+﻿using MvvmCross.Platform;
 using Reddit.Core.Services.Interfaces;
-using Refit;
 
 namespace Reddit.Core.Services
 {

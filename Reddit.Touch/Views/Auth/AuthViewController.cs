@@ -1,9 +1,7 @@
-﻿using System;
-using MvvmCross.Binding.BindingContext;
+﻿using MvvmCross.Binding.BindingContext;
 using MvvmCross.iOS.Views;
 using MvvmCross.iOS.Views.Presenters.Attributes;
 using Reddit.Core.ViewModels;
-using UIKit;
 
 namespace Reddit.Touch.Views.Auth
 {

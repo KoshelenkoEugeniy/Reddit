@@ -35,6 +35,7 @@
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Polly.pdb
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/Polly.xml
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/bin/Debug/ModernHttpClient.dll.mdb
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/obj/Debug/Reddit.Core.csprojAssemblyReference.cache
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/obj/Debug/Reddit.Core.Resources.AppStrings.resources
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/obj/Debug/Reddit.Core.csproj.GenerateResource.cache
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/obj/Debug/Reddit.Core.csproj.CoreCompileInputs.cache

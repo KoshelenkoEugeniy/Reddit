@@ -4,15 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" 
     android:layout_width="match_parent" 
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
     
     <MvxListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
-        app:MvxBind="ItemsSource HomeFeeds" 
-        app:MvxItemTemplate="@layout/itemtemplate_imagefeed"    
-    />
+        app:MvxBind="ItemsSource HomeFeeds; ItemClick OpenFeedCommand" 
+        app:MvxItemTemplate="@layout/itemtemplate_textfeed"/>
     
 </LinearLayout>

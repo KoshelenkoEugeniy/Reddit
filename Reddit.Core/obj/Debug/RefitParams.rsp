@@ -1,8 +1,6 @@
-MyClass.cs
 Properties/AssemblyInfo.cs
 App.cs
 ViewModels/FeedViewModel.cs
-Data/Dtos/DefaultResponse.cs
 Data/Dtos/AccessResponseDto.cs
 Data/Dtos/UserResponseDto.cs
 Data/Dtos/FeedResponseDto.cs
@@ -30,4 +28,6 @@ Data/Dtos/HomeResponseDto.cs
 Data/Dtos/WrappedFeedResponseDto.cs
 Data/Dtos/FeedsGroupResponseDto.cs
 Data/Mappers/FeedMapper.cs
+Helpers/Interfaces/IOpenUrlHelper.cs
+Data/Common/PlatformsEnum.cs
 /var/folders/pf/zxc6rm292410_vhkgw0mx2cm0000gn/T/.NETPortable,Version=v4.6,Profile=Profile44.AssemblyAttributes.cs

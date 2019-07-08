@@ -12,15 +12,15 @@ dimen;obj/Debug/res/values/dimens.xml
 EditText;obj/Debug/res/layout/activity_auth.xml
 foreground;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 foreground;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_round.xml
-FrameLayout;obj/Debug/res/layout/itemtemplate_imagefeed.xml
+FrameLayout;obj/Debug/res/layout/itemtemplate_textfeed.xml
 item;/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/lp/1/jl/res/values/ids.xml
 item;/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/lp/1/jl/res/values/mvxbindingattributes.xml
 item;obj/Debug/res/menu/menu_main.xml
 item;obj/Debug/res/values/styles.xml
 LinearLayout;obj/Debug/res/layout/activity_feed.xml
-LinearLayout;obj/Debug/res/layout/itemtemplate_imagefeed.xml
+LinearLayout;obj/Debug/res/layout/itemtemplate_textfeed.xml
 menu;obj/Debug/res/menu/menu_main.xml
-MvvmCross.Binding.Droid.Views.MvxImageView;obj/Debug/res/layout/itemtemplate_imagefeed.xml
+MvvmCross.Binding.Droid.Views.MvxImageView;obj/Debug/res/layout/itemtemplate_textfeed.xml
 MvxListView;obj/Debug/res/layout/activity_feed.xml
 padding;obj/Debug/res/drawable/round_shape.xml
 RelativeLayout;obj/Debug/res/layout/activity_auth.xml
@@ -37,4 +37,4 @@ string;obj/Debug/res/values/strings.xml
 stroke;obj/Debug/res/drawable/round_shape.xml
 style;obj/Debug/res/values/styles.xml
 TextView;obj/Debug/res/layout/activity_auth.xml
-TextView;obj/Debug/res/layout/itemtemplate_imagefeed.xml
+TextView;obj/Debug/res/layout/itemtemplate_textfeed.xml

@@ -27,11 +27,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="App.cs" />
     <Compile Include="ViewModels\FeedViewModel.cs" />
-    <Compile Include="Data\Dtos\DefaultResponse.cs" />
     <Compile Include="Data\Dtos\AccessResponseDto.cs" />
     <Compile Include="Data\Dtos\UserResponseDto.cs" />
     <Compile Include="Data\Dtos\FeedResponseDto.cs" />
@@ -61,6 +59,8 @@
     <Compile Include="Data\Dtos\WrappedFeedResponseDto.cs" />
     <Compile Include="Data\Dtos\FeedsGroupResponseDto.cs" />
     <Compile Include="Data\Mappers\FeedMapper.cs" />
+    <Compile Include="Helpers\Interfaces\IOpenUrlHelper.cs" />
+    <Compile Include="Data\Common\PlatformsEnum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -107,6 +107,7 @@
     <Folder Include="Data\Mappers\" />
     <Folder Include="Helpers\" />
     <Folder Include="Helpers\Interfaces\" />
+    <Folder Include="Data\Common\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppStrings.resx">

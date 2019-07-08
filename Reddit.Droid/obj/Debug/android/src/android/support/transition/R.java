@@ -3122,7 +3122,6 @@ containing a value of this type.
         public static int passwordEditText=0x7f080093;
         public static int passwordTextView=0x7f080092;
         public static int pin=0x7f08004e;
-        public static int postMvxImageView=0x7f0800ab;
         public static int progress_circular=0x7f080006;
         public static int progress_horizontal=0x7f080007;
         public static int radio=0x7f080076;
@@ -3191,6 +3190,7 @@ containing a value of this type.
         public static int transition_transform=0x7f080013;
         public static int uniform=0x7f08002e;
         public static int up=0x7f080009;
+        public static int urlTextView=0x7f0800ab;
         public static int useLogo=0x7f080027;
         public static int view_offset_helper=0x7f080016;
         public static int visible=0x7f0800c0;
@@ -3253,7 +3253,7 @@ containing a value of this type.
         public static int design_navigation_menu=0x7f040028;
         public static int design_navigation_menu_item=0x7f040029;
         public static int design_text_input_password_icon=0x7f04002a;
-        public static int itemtemplate_imagefeed=0x7f04002b;
+        public static int itemtemplate_textfeed=0x7f04002b;
         public static int notification_action=0x7f04002c;
         public static int notification_action_tombstone=0x7f04002d;
         public static int notification_media_action=0x7f04002e;

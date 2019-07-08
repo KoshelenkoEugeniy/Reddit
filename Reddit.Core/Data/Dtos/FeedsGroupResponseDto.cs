@@ -1,9 +1,8 @@
-﻿using System;
-namespace Reddit.Core.Data.Dtos
+﻿namespace Reddit.Core.Data.Dtos
 {
     public class FeedsGroupResponseDto
     {
-        public int dist { get; set; }
+        public int dist { get; set; }   //lower case for json parsing
 
         public WrappedFeedResponseDto[] children { get; set; }
     }

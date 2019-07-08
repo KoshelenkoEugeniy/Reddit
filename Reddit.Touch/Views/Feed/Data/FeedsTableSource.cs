@@ -21,6 +21,7 @@ namespace Reddit.Touch.Views.Feed.Data
                                     FeedTableViewCell.Key :
                                     FeedTextTableViewCell.Key;
 
+
             var cell = tableView.DequeueReusableCell(_cellIdentifier, indexPath);                             return cell;
         }
     }

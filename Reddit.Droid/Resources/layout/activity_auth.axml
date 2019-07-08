@@ -125,5 +125,4 @@
 		android:layout_marginBottom="50dp"
         app:MvxBind="Text LoginText; Click LoginCommand"/>
    
-    
 </RelativeLayout>

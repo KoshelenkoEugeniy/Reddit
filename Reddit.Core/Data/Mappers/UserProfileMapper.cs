@@ -1,5 +1,4 @@
-﻿using System;
-using Reddit.Core.Data.Dtos;
+﻿using Reddit.Core.Data.Dtos;
 using Reddit.Core.Data.Models;
 
 namespace Reddit.Core.Data.Mappers

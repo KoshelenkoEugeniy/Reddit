@@ -143,7 +143,6 @@
         <InterfaceDefinition Include="LaunchScreen.storyboard" />
         <InterfaceDefinition Include="Main.storyboard" />
         <InterfaceDefinition Include="Views\Feed\FeedViewController.xib" />
-        <InterfaceDefinition Include="Views\Feed\Data\FeedTableViewCell.xib" />
         <InterfaceDefinition Include="Views\Auth\AuthViewController.xib" />
         <InterfaceDefinition Include="Views\Feed\Data\FeedTextTableViewCell.xib" />
     </ItemGroup>
@@ -159,21 +158,16 @@
         <Compile Include="Views\Feed\FeedViewController.designer.cs">
           <DependentUpon>FeedViewController.cs</DependentUpon>
         </Compile>
-        <Compile Include="Views\Feed\Data\FeedTableViewCell.cs" />
-        <Compile Include="Views\Feed\Data\FeedTableViewCell.designer.cs">
-          <DependentUpon>FeedTableViewCell.cs</DependentUpon>
-        </Compile>
         <Compile Include="Helpers\DeviceInfo.cs" />
         <Compile Include="Views\Auth\AuthViewController.cs" />
         <Compile Include="Views\Auth\AuthViewController.designer.cs">
           <DependentUpon>AuthViewController.cs</DependentUpon>
         </Compile>
-        <Compile Include="Views\BaseViewController.cs" />
         <Compile Include="Views\Feed\Data\FeedTextTableViewCell.cs" />
         <Compile Include="Views\Feed\Data\FeedTextTableViewCell.designer.cs">
           <DependentUpon>FeedTextTableViewCell.cs</DependentUpon>
         </Compile>
-        <Compile Include="Views\Feed\Data\FeedsTableSource.cs" />
+        <Compile Include="Helpers\OpenUrlHelper.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\Reddit.Core\Reddit.Core.csproj">

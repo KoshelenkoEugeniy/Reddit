@@ -64,6 +64,7 @@
     <Compile Include="Views\Feed\FeedActivity.cs" />
     <Compile Include="Helpers\DeviceInfo.cs" />
     <Compile Include="Views\Auth\AuthActivity.cs" />
+    <Compile Include="Helpers\OpenUrlHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -97,7 +98,7 @@
     <AndroidResource Include="Resources\layout\activity_feed.axml" />
     <AndroidResource Include="Resources\layout\activity_auth.axml" />
     <AndroidResource Include="Resources\drawable\round_shape.xml" />
-    <AndroidResource Include="Resources\layout\itemtemplate_imagefeed.axml" />
+    <AndroidResource Include="Resources\layout\itemtemplate_textfeed.axml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />

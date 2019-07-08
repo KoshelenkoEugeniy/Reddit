@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
 using MvvmCross.Platform;
 using Newtonsoft.Json;
+using Reddit.Core.Data.Common;
 using Reddit.Core.Data.Dtos;
-using Reddit.Core.Data.Models;
 using Reddit.Core.Helpers.Interfaces;
-using Reddit.Core.Managers;
 using Reddit.Core.Services.Interfaces;
 
 namespace Reddit.Core.Services
@@ -20,7 +18,6 @@ namespace Reddit.Core.Services
         protected readonly IDeviceInfo DeviceInfo;
 
         private HttpClient _client;
-
 
         public RedditApi()
         {
@@ -45,12 +42,11 @@ namespace Reddit.Core.Services
 
         private void CreateClient()
         {
-            //var token = AccountManager.GetTokenInfo();
             _client = new HttpClient();
             _client.BaseAddress = new Uri(BaseAddress);
             _client.DefaultRequestHeaders.Accept.Clear();
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(("application/json")));
-            if(DeviceInfo.DeviceType == "iOS")
+            if(DeviceInfo.DeviceType == PlatformsEnum.iOS)
             {
                 _client.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("iOSReddit", "1.0"));
             }
@@ -58,7 +54,6 @@ namespace Reddit.Core.Services
             {
                 _client.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("DroidReddit", "1.0"));
             }
-            //_client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(token.token_type, token.access_token);
         }
     }
 }

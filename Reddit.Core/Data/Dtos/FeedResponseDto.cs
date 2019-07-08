@@ -1,11 +1,8 @@
-﻿using System;
-using Newtonsoft.Json;
-
-namespace Reddit.Core.Data.Dtos
+﻿namespace Reddit.Core.Data.Dtos
 {
     public class FeedResponseDto
     {
-        public string title { get; set; }
+        public string title { get; set; }   //lower case for json parsing
 
         public string subreddit_name_prefixed { get; set; }
 

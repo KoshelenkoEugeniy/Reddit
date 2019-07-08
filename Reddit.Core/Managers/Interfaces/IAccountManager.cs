@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Reddit.Core.Data.Dtos;
+﻿using System.Threading.Tasks;
 using Reddit.Core.Data.Models;
 
 namespace Reddit.Core.Managers.Interfaces

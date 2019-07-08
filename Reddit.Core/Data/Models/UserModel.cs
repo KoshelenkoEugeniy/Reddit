@@ -1,5 +1,4 @@
-﻿using System;
-namespace Reddit.Core.Data.Models
+﻿namespace Reddit.Core.Data.Models
 {
     public class UserModel
     {

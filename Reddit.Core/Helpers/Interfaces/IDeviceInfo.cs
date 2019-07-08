@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Reddit.Core.Data.Common;
+
 namespace Reddit.Core.Helpers.Interfaces
 {
     public interface IDeviceInfo
     {
-        string DeviceType { get; }
+        PlatformsEnum DeviceType { get; }
     }
 }

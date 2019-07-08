@@ -862,7 +862,6 @@ int id parent_matrix 0x7f08000b
 int id passwordEditText 0x7f080093
 int id passwordTextView 0x7f080092
 int id pin 0x7f08004e
-int id postMvxImageView 0x7f0800ab
 int id progress_circular 0x7f080006
 int id progress_horizontal 0x7f080007
 int id radio 0x7f080076
@@ -931,6 +930,7 @@ int id transition_scene_layoutid_cache 0x7f080012
 int id transition_transform 0x7f080013
 int id uniform 0x7f08002e
 int id up 0x7f080009
+int id urlTextView 0x7f0800ab
 int id useLogo 0x7f080027
 int id view_offset_helper 0x7f080016
 int id visible 0x7f0800c0
@@ -989,7 +989,7 @@ int layout design_navigation_item_subheader 0x7f040027
 int layout design_navigation_menu 0x7f040028
 int layout design_navigation_menu_item 0x7f040029
 int layout design_text_input_password_icon 0x7f04002a
-int layout itemtemplate_imagefeed 0x7f04002b
+int layout itemtemplate_textfeed 0x7f04002b
 int layout notification_action 0x7f04002c
 int layout notification_action_tombstone 0x7f04002d
 int layout notification_media_action 0x7f04002e

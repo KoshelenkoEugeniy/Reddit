@@ -1,7 +1,5 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Reddit.Core.Data.Dtos;
-using Reddit.Core.Data.Models;
 
 namespace Reddit.Core.Services.Interfaces
 {

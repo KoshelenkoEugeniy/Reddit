@@ -1,17 +1,18 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
 using Reddit.Core.Data.Models;
+using Reddit.Core.Helpers.Interfaces;
 using Reddit.Core.Managers.Interfaces;
-using Reddit.Core.Resources;
 
 namespace Reddit.Core.ViewModels
 {
     public class FeedViewModel : MvxViewModel
     {
         public MvxObservableCollection<FeedModel> HomeFeeds { get; set; }
+
+        public IMvxAsyncCommand<FeedModel> OpenFeedCommand { get; set; }
 
         private string _userName;
         public string UserName
@@ -29,16 +30,18 @@ namespace Reddit.Core.ViewModels
 
         private IAccountManager _accountManager;
 
-        private UserModel currentUser = new UserModel();
+        private IOpenUrlHelper _urlHelper;
 
-        public FeedViewModel(IFeedsManager feedsManager, IAccountManager accountManager)
+        public FeedViewModel(IFeedsManager feedsManager, IAccountManager accountManager, IOpenUrlHelper urlHelper)
         {
             NavigationService = Mvx.Resolve<IMvxNavigationService>();
 
             _feedsManager = feedsManager;
             _accountManager = accountManager;
+            _urlHelper = urlHelper;
 
             HomeFeeds = new MvxObservableCollection<FeedModel>();
+            OpenFeedCommand = new MvxAsyncCommand<FeedModel>(OpenFeed);
         }
 
         public async override void ViewAppearing()
@@ -53,6 +56,11 @@ namespace Reddit.Core.ViewModels
             {
                 HomeFeeds.AddRange(await _feedsManager.GetHomeFeeds());
             }
+        }
+
+        private async Task OpenFeed(FeedModel feed)
+        {
+            _urlHelper.OpenUrl(feed.Url);
         }
     }
 }

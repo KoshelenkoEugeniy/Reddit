@@ -1,9 +1,7 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
-using Reddit.Core.Data.Models;
 using Reddit.Core.Managers.Interfaces;
 using Reddit.Core.Resources;
 
@@ -51,8 +49,6 @@ namespace Reddit.Core.ViewModels
             get => _password;
             set => SetProperty(ref _password, value);
         }
-
-        public TaskCompletionSource<object> CloseCompletionSource { get; set; }
 
         protected readonly IMvxNavigationService NavigationService;
 

@@ -1,5 +1,4 @@
-﻿using System;
-using Android.Content;
+﻿using Android.Content;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Platform;
 using MvvmCross.Platform;
@@ -16,13 +15,14 @@ namespace Reddit.Droid
 
         protected override IMvxApplication CreateApp()
         {
-            return new Reddit.Core.App();
+            return new Core.App();
         }
 
         protected override void InitializeIoC()
         {
             base.InitializeIoC();
             Mvx.RegisterType<IDeviceInfo, DeviceInfo>();
+            Mvx.RegisterType<IOpenUrlHelper, OpenUrlHelper>();
         }
     }
 }

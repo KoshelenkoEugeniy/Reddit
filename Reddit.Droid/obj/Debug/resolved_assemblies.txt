@@ -62,8 +62,8 @@
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Net.Requests.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Diagnostics.Tools.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Resources.ResourceManager.dll
-/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/Newtonsoft.Json.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Text.Encoding.dll
+/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/Newtonsoft.Json.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Xml.ReaderWriter.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Xml.XDocument.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/android/assets/System.Xml.Linq.dll

@@ -1,12 +1,10 @@
-﻿using System;
+﻿using Reddit.Core.Data.Common;
 using Reddit.Core.Helpers.Interfaces;
 
 namespace Reddit.Touch.Helpers
 {
     public class DeviceInfo: IDeviceInfo
     {
-        public string DeviceType => Type;
-
-        public static string Type => "iOS";
+        public PlatformsEnum DeviceType => PlatformsEnum.iOS;
     }
 }

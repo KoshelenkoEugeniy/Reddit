@@ -2735,9 +2735,6 @@ namespace Reddit.Droid
 			// aapt resource value: 0x7f08004e
 			public const int pin = 2131230798;
 			
-			// aapt resource value: 0x7f0800ab
-			public const int postMvxImageView = 2131230891;
-			
 			// aapt resource value: 0x7f080006
 			public const int progress_circular = 2131230726;
 			
@@ -2942,6 +2939,9 @@ namespace Reddit.Droid
 			// aapt resource value: 0x7f080009
 			public const int up = 2131230729;
 			
+			// aapt resource value: 0x7f0800ab
+			public const int urlTextView = 2131230891;
+			
 			// aapt resource value: 0x7f080027
 			public const int useLogo = 2131230759;
 			
@@ -3143,7 +3143,7 @@ namespace Reddit.Droid
 			public const int design_text_input_password_icon = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int itemtemplate_imagefeed = 2130968619;
+			public const int itemtemplate_textfeed = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
 			public const int notification_action = 2130968620;
