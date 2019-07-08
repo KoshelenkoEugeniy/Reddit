@@ -19,7 +19,7 @@ namespace Reddit.Touch.Views.Feed
 		UIKit.UIActivityIndicatorView LogoActivityIndicator { get; set; }
 
 		[Outlet]
-		UIKit.UIImageView LogoImageViw { get; set; }
+		UIKit.UIImageView LogoImageView { get; set; }
 
 		[Outlet]
 		UIKit.UILabel UserNameLabel { get; set; }
@@ -31,19 +31,19 @@ namespace Reddit.Touch.Views.Feed
 				FeedsTableView = null;
 			}
 
-			if (LogoImageViw != null) {
-				LogoImageViw.Dispose ();
-				LogoImageViw = null;
+			if (LogoActivityIndicator != null) {
+				LogoActivityIndicator.Dispose ();
+				LogoActivityIndicator = null;
+			}
+
+			if (LogoImageView != null) {
+				LogoImageView.Dispose ();
+				LogoImageView = null;
 			}
 
 			if (UserNameLabel != null) {
 				UserNameLabel.Dispose ();
 				UserNameLabel = null;
-			}
-
-			if (LogoActivityIndicator != null) {
-				LogoActivityIndicator.Dispose ();
-				LogoActivityIndicator = null;
 			}
 		}
 	}

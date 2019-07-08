@@ -36,19 +36,7 @@ namespace Reddit.Touch.Views.Feed.Data
                 bindingSet.Bind(AuthorLabel).To(vm => vm.AuthorName);
                 bindingSet.Bind(TimeLabel).To(vm => vm.Created);
                 bindingSet.Bind(AwardsQuantityLabel).To(vm => vm.TotalAwards);                 bindingSet.Bind(TitleLabel).To(vm => vm.Title);
-                _imageLoader = new MvxImageViewLoader(() => PostImageView, () =>
-                {
-                    if (PostImageView.Image != null)
-                    {
-                        ImageLoadingIndicator.StopAnimating();
-                        ImageLoadingIndicator.Hidden = true;
-                    }
-                    else
-                    {
-                        ImageLoadingIndicator.Hidden = false;
-                        ImageLoadingIndicator.StartAnimating();
-                    }
-                });
+                _imageLoader = new MvxImageViewLoader(() => PostImageView);
                 bindingSet.Bind(_imageLoader).To(vm => vm.Thumbnail);                 bindingSet.Apply();             });
         }
     }

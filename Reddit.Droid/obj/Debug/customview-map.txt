@@ -16,10 +16,8 @@ item;/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debu
 item;obj/Debug/res/menu/menu_main.xml
 item;obj/Debug/res/values/styles.xml
 LinearLayout;obj/Debug/res/layout/activity_feed.xml
-LinearLayout;obj/Debug/res/layout/activity_login.xml
 menu;obj/Debug/res/menu/menu_main.xml
 MvxListView;obj/Debug/res/layout/activity_feed.xml
-MvxListView;obj/Debug/res/layout/activity_login.xml
 RelativeLayout;obj/Debug/res/layout/activity_auth.xml
 resources;/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/lp/1/jl/res/values/ids.xml
 resources;/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/lp/1/jl/res/values/mvxbindingattributes.xml
@@ -31,4 +29,3 @@ resources;obj/Debug/res/values/styles.xml
 string;obj/Debug/res/values/strings.xml
 style;obj/Debug/res/values/styles.xml
 TextView;obj/Debug/res/layout/activity_auth.xml
-TextView;obj/Debug/res/layout/activity_login.xml

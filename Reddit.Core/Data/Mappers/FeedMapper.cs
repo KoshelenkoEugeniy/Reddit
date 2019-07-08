@@ -30,7 +30,8 @@ namespace Reddit.Core.Data.Mappers
         private static int ConvertFromUnixTimestamp(int created)
         {
             var origin = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
-            return (DateTime.UtcNow - origin.AddSeconds(created)).Minutes;
+            var minAgo = (DateTime.UtcNow - origin.AddSeconds(created)).Minutes;
+            return  minAgo < 0 ? 0 : minAgo;
         }
     }
 }

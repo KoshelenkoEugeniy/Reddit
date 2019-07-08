@@ -13,8 +13,6 @@ namespace Reddit.Core.ViewModels
     {
         public MvxObservableCollection<FeedModel> HomeFeeds { get; set; }
 
-        public string Title => AppStrings.Feed_HomeTitle;
-
         private string _userName;
         public string UserName
         {
@@ -22,16 +20,6 @@ namespace Reddit.Core.ViewModels
             set 
             {
                 SetProperty(ref _userName, value); 
-            }
-        }
-
-        private string _logoUrl;
-        public string LogoUrl
-        {
-            get => _logoUrl;
-            set
-            {
-                SetProperty(ref _logoUrl, value);
             }
         }
 
@@ -56,7 +44,6 @@ namespace Reddit.Core.ViewModels
         public async override void ViewAppearing()
         {
             UserName = _accountManager.CurrentUser.UserName;
-            LogoUrl = _accountManager.CurrentUser.LogoUrl;
 
             if (string.IsNullOrEmpty(_accountManager.CurrentUser.UserName))
             {

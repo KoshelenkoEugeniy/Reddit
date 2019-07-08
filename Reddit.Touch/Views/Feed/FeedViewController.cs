@@ -12,7 +12,7 @@ namespace Reddit.Touch.Views.Feed
     {
         MvxFluentBindingDescriptionSet<FeedViewController, FeedViewModel> BindingSet;
 
-        public MvxImageViewLoader imageLoader;
+        private FeedsTableSource source;
 
         public FeedViewController() : base("FeedViewController", null)
         {
@@ -21,18 +21,11 @@ namespace Reddit.Touch.Views.Feed
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            
-            var source = new MvxSimpleTableViewSource(FeedsTableView, FeedTableViewCell.Key, FeedTableViewCell.Key)
-            {
-                DeselectAutomatically = true
-            };
-            FeedsTableView.Source = source;
+
+            source = new FeedsTableSource(FeedsTableView);             FeedsTableView.Source = source;
 
             BindingSet = this.CreateBindingSet<FeedViewController, FeedViewModel>();
-            BindingSet.Bind(this).For(v => v.Title).To(vm => vm.Title);
-            BindingSet.Bind(UserNameLabel).To(vm => vm.UserName);
-            imageLoader = new MvxImageViewLoader(() => LogoImageViw, () => {                  if (LogoImageViw.Image != null)                 {                     LogoActivityIndicator.StopAnimating();                     LogoActivityIndicator.Hidden = true;                 }                 else                 {                     LogoActivityIndicator.Hidden = false;                     LogoActivityIndicator.StartAnimating();                 }             });
-            BindingSet.Bind(imageLoader).To(vm => vm.LogoUrl);
+            BindingSet.Bind(this).For(v => v.Title).To(vm => vm.UserName);
             BindingSet.Bind(source).To(vm => vm.HomeFeeds);
             BindingSet.Apply();
         }

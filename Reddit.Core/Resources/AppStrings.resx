@@ -51,8 +51,5 @@
     <data name="Feed_CreatedAgo" xml:space="preserve">
         <value>{0} min ago</value>
     </data>
-    <data name="Feed_HomeTitle" xml:space="preserve">
-        <value>Home</value>
-    </data>
     
 </root>

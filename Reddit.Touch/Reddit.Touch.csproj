@@ -145,6 +145,7 @@
         <InterfaceDefinition Include="Views\Feed\FeedViewController.xib" />
         <InterfaceDefinition Include="Views\Feed\Data\FeedTableViewCell.xib" />
         <InterfaceDefinition Include="Views\Auth\AuthViewController.xib" />
+        <InterfaceDefinition Include="Views\Feed\Data\FeedTextTableViewCell.xib" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Info.plist" />
@@ -168,6 +169,11 @@
           <DependentUpon>AuthViewController.cs</DependentUpon>
         </Compile>
         <Compile Include="Views\BaseViewController.cs" />
+        <Compile Include="Views\Feed\Data\FeedTextTableViewCell.cs" />
+        <Compile Include="Views\Feed\Data\FeedTextTableViewCell.designer.cs">
+          <DependentUpon>FeedTextTableViewCell.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\Feed\Data\FeedsTableSource.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\Reddit.Core\Reddit.Core.csproj">

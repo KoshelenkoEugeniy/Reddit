@@ -28,9 +28,6 @@ namespace Reddit.Touch.Views.Feed.Data
 		UIKit.UILabel GroupLabel { get; set; }
 
 		[Outlet]
-		UIKit.UIActivityIndicatorView ImageLoadingIndicator { get; set; }
-
-		[Outlet]
 		UIKit.UIImageView PostImageView { get; set; }
 
 		[Outlet]
@@ -87,11 +84,6 @@ namespace Reddit.Touch.Views.Feed.Data
 			if (TitleLabel != null) {
 				TitleLabel.Dispose ();
 				TitleLabel = null;
-			}
-
-			if (ImageLoadingIndicator != null) {
-				ImageLoadingIndicator.Dispose ();
-				ImageLoadingIndicator = null;
 			}
 		}
 	}

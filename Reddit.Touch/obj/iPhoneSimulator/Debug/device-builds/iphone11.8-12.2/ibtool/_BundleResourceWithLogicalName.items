@@ -9,6 +9,10 @@
       <LogicalName>FeedTableViewCell.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/ibtool/FeedTextTableViewCell.nib">
+      <LogicalName>FeedTextTableViewCell.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/ibtool/FeedViewController.nib">
       <LogicalName>FeedViewController.nib</LogicalName>
       <Optimize>false</Optimize>

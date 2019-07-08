@@ -124,11 +124,5 @@ namespace Reddit.Core.Resources {
                 return ResourceManager.GetString("Feed_CreatedAgo", resourceCulture);
             }
         }
-        
-        internal static string Feed_HomeTitle {
-            get {
-                return ResourceManager.GetString("Feed_HomeTitle", resourceCulture);
-            }
-        }
     }
 }
