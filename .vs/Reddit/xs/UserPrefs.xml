@@ -1,26 +1,16 @@
 ﻿<Properties StartupConfiguration="{D0B3C1F0-4A36-464A-A3D6-F6F4F0DA554E}|Default">
   <MonoDevelop.Ide.ItemProperties.Reddit.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_2_xl" PreferredExecutionTarget="Android.192.168.56.101:5555" />
   <MonoDevelop.Ide.ItemProperties.Reddit.Touch automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D5C5EAE9-8534-4BC9-A727-15D21F539CAB" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Reddit.Touch/Setup.cs">
-    <Files>
-      <File FileName="Reddit.Touch/Views/Feed/Data/FeedTextTableViewCell.cs" Line="1" Column="14" />
-      <File FileName="Reddit.Touch/Views/Feed/FeedViewController.cs" Line="1" Column="1" />
-      <File FileName="Reddit.Touch/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="Reddit.Touch/Setup.cs" Line="27" Column="63" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Reddit" expanded="True">
             <Node name="Reddit.Core" expanded="True" />
-            <Node name="Reddit.Droid" expanded="True" />
-            <Node name="Reddit.Touch" expanded="True">
-              <Node name="Views" expanded="True">
-                <Node name="Feed" expanded="True">
-                  <Node name="Data" expanded="True" />
-                </Node>
+            <Node name="Reddit.Droid" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
               </Node>
-              <Node name="Setup.cs" selected="True" />
             </Node>
           </Node>
         </State>

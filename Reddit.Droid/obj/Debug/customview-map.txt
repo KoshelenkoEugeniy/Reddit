@@ -1,5 +1,6 @@
 adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_round.xml
+android.support.v7.widget.Toolbar;obj/Debug/res/layout/activity_feed.xml
 attr;/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Droid/obj/Debug/lp/1/jl/res/values/mvxbindingattributes.xml
 background;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 background;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_round.xml
