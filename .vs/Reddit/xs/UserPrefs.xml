@@ -1,15 +1,10 @@
 ﻿<Properties StartupConfiguration="{C04C6DE0-9C9A-4C12-8086-53676682DFB6}|Default">
   <MonoDevelop.Ide.ItemProperties.Reddit.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_2_xl" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.ItemProperties.Reddit.Touch PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D5C5EAE9-8534-4BC9-A727-15D21F539CAB" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Reddit.Touch/Views/Feed/Data/FeedTextTableViewCell.cs">
+  <MonoDevelop.Ide.ItemProperties.Reddit.Touch automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D5C5EAE9-8534-4BC9-A727-15D21F539CAB" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Reddit.Droid/Views/Feed/FeedActivity.cs">
     <Files>
-      <File FileName="Reddit.Touch/Views/Feed/Data/FeedTableViewCell.cs" Line="41" Column="64" />
-      <File FileName="Reddit.Core/ViewModels/AuthViewModel.cs" Line="8" Column="1" />
-      <File FileName="Reddit.Touch/Views/Feed/FeedViewController.cs" Line="29" Column="75" />
-      <File FileName="Reddit.Core/ViewModels/FeedViewModel.cs" Line="46" Column="1" />
-      <File FileName="Reddit.Touch/Views/Feed/Data/FeedsTableSource.cs" Line="21" Column="53" />
-      <File FileName="Reddit.Touch/Views/Feed/Data/FeedTextTableViewCell.cs" Line="40" Column="36" />
-      <File FileName="Reddit.Touch/Views/Feed/Data/FeedTextTableViewCell.designer.cs" Line="28" Column="24" />
+      <File FileName="Reddit.Touch/Views/Feed/Data/FeedTableViewCell.cs" Line="42" Column="60" />
+      <File FileName="Reddit.Droid/Views/Feed/FeedActivity.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,6 +13,7 @@
             <Node name="Reddit.Core" expanded="True">
               <Node name="Data" expanded="True">
                 <Node name="Mappers" expanded="True" />
+                <Node name="Models" expanded="True" />
               </Node>
               <Node name="Helpers" expanded="True">
                 <Node name="Interfaces" expanded="True" />
@@ -33,19 +29,28 @@
               </Node>
               <Node name="ViewModels" expanded="True" />
             </Node>
-            <Node name="Reddit.Touch" expanded="True">
-              <Node name="Helpers" expanded="True" />
+            <Node name="Reddit.Droid" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+              </Node>
               <Node name="Views" expanded="True">
-                <Node name="Auth" expanded="True" />
                 <Node name="Feed" expanded="True">
-                  <Node name="Data" expanded="True">
-                    <Node name="FeedTextTableViewCell.cs" expanded="True" selected="True" />
-                  </Node>
+                  <Node name="FeedActivity.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Reddit.Touch" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Feed" expanded="True">
+                  <Node name="Data" expanded="True" />
                 </Node>
               </Node>
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
