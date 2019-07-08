@@ -5,7 +5,12 @@ MvvmCross.Droid
 MvvmCross.Localization
 MvvmCross.Platform
 MvvmCross.Platform.Droid
+MvvmCross.Plugins.DownloadCache
+MvvmCross.Plugins.DownloadCache.Droid
+MvvmCross.Plugins.File
+MvvmCross.Plugins.File.Droid
 Reddit.Core
+System.Collections.Immutable
 System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
@@ -24,3 +29,8 @@ Xamarin.Android.Support.v7.AppCompat
 Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
 Xamarin.Essentials
+System.Diagnostics.Tools
+System.Resources.ResourceManager
+Polly
+Newtonsoft.Json
+System.Reflection.Extensions

@@ -53,10 +53,50 @@
           "lib/MonoAndroid/MvvmCross.Platform.dll": {}
         }
       },
+      "MvvmCross.Plugin.DownloadCache/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross.Binding": "[5.6.3]",
+          "MvvmCross.Platform": "[5.6.3]",
+          "System.Collections.Immutable": "1.3.1",
+          "Xamarin.Android.Support.Compat": "25.3.1"
+        },
+        "compile": {
+          "lib/MonoAndroid/MvvmCross.Plugins.DownloadCache.Droid.dll": {},
+          "lib/MonoAndroid/MvvmCross.Plugins.DownloadCache.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/MvvmCross.Plugins.DownloadCache.Droid.dll": {},
+          "lib/MonoAndroid/MvvmCross.Plugins.DownloadCache.dll": {}
+        }
+      },
+      "MvvmCross.Plugin.File/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross.Platform": "[5.6.3]"
+        },
+        "compile": {
+          "lib/MonoAndroid/MvvmCross.Plugins.File.Droid.dll": {},
+          "lib/MonoAndroid/MvvmCross.Plugins.File.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/MvvmCross.Plugins.File.Droid.dll": {},
+          "lib/MonoAndroid/MvvmCross.Plugins.File.dll": {}
+        }
+      },
       "MvvmCross.StarterPack/5.6.3": {
         "type": "package",
         "dependencies": {
           "MvvmCross": "[5.6.3]"
+        }
+      },
+      "System.Collections.Immutable/1.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -535,6 +575,81 @@
         "mvvmcross.platform.nuspec"
       ]
     },
+    "MvvmCross.Plugin.DownloadCache/5.6.3": {
+      "sha512": "LU8nxm+MANzjB2F+WARLiN3eTWXi5KfPfq8t3QjruiPwxmpkRaIlu1bz0EL7uCB6yTxHDhm7aluhjwa70snWgQ==",
+      "type": "package",
+      "path": "mvvmcross.plugin.downloadcache/5.6.3",
+      "files": [
+        ".signature.p7s",
+        "content/MonoAndroid/Bootstrap/DownloadCachePluginBootstrap.cs.pp",
+        "content/Xamarin.iOS10/Bootstrap/DownloadCachePluginBootstrap.cs.pp",
+        "lib/MonoAndroid/MvvmCross.Plugins.DownloadCache.Droid.dll",
+        "lib/MonoAndroid/MvvmCross.Plugins.DownloadCache.Droid.pdb",
+        "lib/MonoAndroid/MvvmCross.Plugins.DownloadCache.dll",
+        "lib/MonoAndroid/MvvmCross.Plugins.DownloadCache.pdb",
+        "lib/MonoAndroid/MvvmCross.Plugins.DownloadCache.pdb.srcsrv",
+        "lib/Xamarin.Mac20/MvvmCross.Plugins.DownloadCache.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Plugins.DownloadCache.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Plugins.DownloadCache.pdb.srcsrv",
+        "lib/Xamarin.iOS10/MvvmCross.Plugins.DownloadCache.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Plugins.DownloadCache.iOS.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Plugins.DownloadCache.iOS.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Plugins.DownloadCache.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Plugins.DownloadCache.pdb.srcsrv",
+        "lib/dotnet/MvvmCross.Plugins.DownloadCache.dll",
+        "lib/dotnet/MvvmCross.Plugins.DownloadCache.pdb",
+        "lib/dotnet/MvvmCross.Plugins.DownloadCache.pdb.srcsrv",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Plugins.DownloadCache.dll",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Plugins.DownloadCache.pdb",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Plugins.DownloadCache.pdb.srcsrv",
+        "mvvmcross.plugin.downloadcache.5.6.3.nupkg.sha512",
+        "mvvmcross.plugin.downloadcache.nuspec"
+      ]
+    },
+    "MvvmCross.Plugin.File/5.6.3": {
+      "sha512": "O+eYCMOq/aBHKNsUZkjc5Z3lqHwzxzUG6oRMI96WDJQiqYjgtUFRQPQCORQ3p3TxccHPNssqswGswtfNVl7jRg==",
+      "type": "package",
+      "path": "mvvmcross.plugin.file/5.6.3",
+      "files": [
+        ".signature.p7s",
+        "content/MonoAndroid/Bootstrap/FilePluginBootstrap.cs.pp",
+        "content/Xamarin.iOS10/Bootstrap/FilePluginBootstrap.cs.pp",
+        "content/net45/Bootstrap/FilePluginBootstrap.cs.pp",
+        "content/uap10.0/Bootstrap/FilePluginBootstrap.cs.pp",
+        "lib/MonoAndroid/MvvmCross.Plugins.File.Droid.dll",
+        "lib/MonoAndroid/MvvmCross.Plugins.File.Droid.pdb",
+        "lib/MonoAndroid/MvvmCross.Plugins.File.dll",
+        "lib/MonoAndroid/MvvmCross.Plugins.File.pdb",
+        "lib/MonoAndroid/MvvmCross.Plugins.File.pdb.srcsrv",
+        "lib/Xamarin.Mac20/MvvmCross.Plugins.File.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Plugins.File.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Plugins.File.pdb.srcsrv",
+        "lib/Xamarin.iOS10/MvvmCross.Plugins.File.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Plugins.File.iOS.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Plugins.File.iOS.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Plugins.File.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Plugins.File.pdb.srcsrv",
+        "lib/dotnet/MvvmCross.Plugins.File.dll",
+        "lib/dotnet/MvvmCross.Plugins.File.pdb",
+        "lib/dotnet/MvvmCross.Plugins.File.pdb.srcsrv",
+        "lib/net45/MvvmCross.Plugins.File.Wpf.dll",
+        "lib/net45/MvvmCross.Plugins.File.Wpf.pdb",
+        "lib/net45/MvvmCross.Plugins.File.dll",
+        "lib/net45/MvvmCross.Plugins.File.pdb",
+        "lib/net45/MvvmCross.Plugins.File.pdb.srcsrv",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Plugins.File.dll",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Plugins.File.pdb",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Plugins.File.pdb.srcsrv",
+        "lib/uap10.0/MvvmCross.Plugins.File.Uwp.dll",
+        "lib/uap10.0/MvvmCross.Plugins.File.Uwp.pdb",
+        "lib/uap10.0/MvvmCross.Plugins.File.Uwp.pri",
+        "lib/uap10.0/MvvmCross.Plugins.File.dll",
+        "lib/uap10.0/MvvmCross.Plugins.File.pdb",
+        "lib/uap10.0/MvvmCross.Plugins.File.pdb.srcsrv",
+        "mvvmcross.plugin.file.5.6.3.nupkg.sha512",
+        "mvvmcross.plugin.file.nuspec"
+      ]
+    },
     "MvvmCross.StarterPack/5.6.3": {
       "sha512": "Fxy1NKGAabmvRFkZIb+Lgo4wkWakEwXDOqSAwDiNPMg3BaIZyvHgre/lGeMxvjoVK1ir9p2r+jyFwk8JEi2HpQ==",
       "type": "package",
@@ -575,6 +690,22 @@
         "content/portable-net45+win+wpa81+wp80/ViewModels/MainViewModel.cs.pp",
         "mvvmcross.starterpack.5.6.3.nupkg.sha512",
         "mvvmcross.starterpack.nuspec"
+      ]
+    },
+    "System.Collections.Immutable/1.3.1": {
+      "sha512": "l4+rzYublb3m31Xn3igr/BBDro/gaf9kUZOS+NpCTmSGe6L+Fvu6p111Bar7v5IwS0ikJ1o72+U+DB69ocVmcg==",
+      "type": "package",
+      "path": "system.collections.immutable/1.3.1",
+      "files": [
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/System.Collections.Immutable.dll",
+        "lib/netstandard1.0/System.Collections.Immutable.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
+        "system.collections.immutable.1.3.1.nupkg.sha512",
+        "system.collections.immutable.nuspec"
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
@@ -1011,6 +1142,8 @@
       "MvvmCross.Binding >= 5.6.3",
       "MvvmCross.Core >= 5.6.3",
       "MvvmCross.Platform >= 5.6.3",
+      "MvvmCross.Plugin.DownloadCache >= 5.6.3",
+      "MvvmCross.Plugin.File >= 5.6.3",
       "MvvmCross.StarterPack >= 5.6.3",
       "Reddit.Core >= 1.0.0",
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.1",
@@ -1067,6 +1200,14 @@
             "version": "[5.6.3, )"
           },
           "MvvmCross.Platform": {
+            "target": "Package",
+            "version": "[5.6.3, )"
+          },
+          "MvvmCross.Plugin.DownloadCache": {
+            "target": "Package",
+            "version": "[5.6.3, )"
+          },
+          "MvvmCross.Plugin.File": {
             "target": "Package",
             "version": "[5.6.3, )"
           },

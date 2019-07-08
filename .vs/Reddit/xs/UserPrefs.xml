@@ -1,10 +1,12 @@
-﻿<Properties StartupConfiguration="{C04C6DE0-9C9A-4C12-8086-53676682DFB6}|Default">
+﻿<Properties StartupConfiguration="{D0B3C1F0-4A36-464A-A3D6-F6F4F0DA554E}|Default">
   <MonoDevelop.Ide.ItemProperties.Reddit.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_2_xl" PreferredExecutionTarget="Android.192.168.56.101:5555" />
   <MonoDevelop.Ide.ItemProperties.Reddit.Touch automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D5C5EAE9-8534-4BC9-A727-15D21F539CAB" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Reddit.Droid/Views/Feed/FeedActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Reddit.Core/Services/AccountService.cs">
     <Files>
-      <File FileName="Reddit.Touch/Views/Feed/Data/FeedTableViewCell.cs" Line="42" Column="60" />
-      <File FileName="Reddit.Droid/Views/Feed/FeedActivity.cs" Line="1" Column="1" />
+      <File FileName="Reddit.Core/ViewModels/FeedViewModel.cs" Line="54" Column="1" />
+      <File FileName="Reddit.Core/Services/AccountService.cs" Line="36" Column="10" />
+      <File FileName="Reddit.Core/Services/ApiService.cs" Line="1" Column="1" />
+      <File FileName="Reddit.Core/Services/BaseService.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,24 +28,19 @@
               </Node>
               <Node name="Services" expanded="True">
                 <Node name="Interfaces" expanded="True" />
+                <Node name="AccountService.cs" selected="True" />
               </Node>
               <Node name="ViewModels" expanded="True" />
             </Node>
             <Node name="Reddit.Droid" expanded="True">
+              <Node name="Assets" expanded="True" />
+              <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True" />
                 <Node name="layout" expanded="True" />
               </Node>
               <Node name="Views" expanded="True">
-                <Node name="Feed" expanded="True">
-                  <Node name="FeedActivity.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-            <Node name="Reddit.Touch" expanded="True">
-              <Node name="Views" expanded="True">
-                <Node name="Feed" expanded="True">
-                  <Node name="Data" expanded="True" />
-                </Node>
+                <Node name="Feed" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -58,7 +55,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Services/AccountService.cs" relfile="Reddit.Core/Services/AccountService.cs" line="58" column="1" />
+      <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Services/AccountService.cs" relfile="Reddit.Core/Services/AccountService.cs" line="55" column="1" />
       <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" relfile="Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" line="33" column="1" />
       <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" relfile="Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" line="45" column="1" />
       <Breakpoint file="/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" relfile="Reddit.Core/Services/AuthenticatedHttpClientHandler.cs" line="44" column="1" />

@@ -38,7 +38,6 @@
     <Compile Include="Services\Interfaces\IRedditApi.cs" />
     <Compile Include="Services\ApiService.cs" />
     <Compile Include="Services\Interfaces\IApiService.cs" />
-    <Compile Include="Services\AuthenticatedHttpClientHandler.cs" />
     <Compile Include="GlobalConstants.cs" />
     <Compile Include="Resources\AppStrings.Designer.cs">
       <DependentUpon>AppStrings.resx</DependentUpon>

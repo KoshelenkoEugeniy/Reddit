@@ -41,4 +41,3 @@
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/obj/Debug/Reddit.Core.csproj.CopyComplete
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/obj/Debug/Reddit.Core.dll
 /Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/obj/Debug/Reddit.Core.pdb
-/Users/eugene/Documents/Developer/Xamarin/RedditFeeds/Reddit.Core/obj/Debug/Reddit.Core.csprojAssemblyReference.cache

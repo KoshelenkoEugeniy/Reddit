@@ -9,7 +9,6 @@ Data/Dtos/FeedResponseDto.cs
 Services/Interfaces/IRedditApi.cs
 Services/ApiService.cs
 Services/Interfaces/IApiService.cs
-Services/AuthenticatedHttpClientHandler.cs
 GlobalConstants.cs
 Resources/AppStrings.Designer.cs
 Services/BaseService.cs
